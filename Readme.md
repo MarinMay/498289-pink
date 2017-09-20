@@ -1,7 +1,7 @@
 # Личный проект «Пинк» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Марина Ваганова](https://up.htmlacademy.ru/adaptive/12/user/498289).
-* Наставник: [Лиза Позднякова]  (https://htmlacademy.ru/profile/lizzy).
+* Наставник: [Лиза Позднякова](https://htmlacademy.ru/profile/lizzy).
 
 ---
 
