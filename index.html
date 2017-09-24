@@ -7,7 +7,7 @@
   <body>
     <header class="page-header">
       <a class="page-header__logo">
-        <img class="page-header__logo" src="http://placehold.it/150x100" alt="PINK" width="" height="">
+        <img src="http://placehold.it/150x100" alt="PINK" width="" height="">
       </a>
 
       <nav class="main-nav">
@@ -47,27 +47,26 @@
 
         <a class="download__button button" href="https://www.apple.com/ru/itunes/">Скачать приложение</a>
 
-        <div class="download__link">
-          <ul class="download__list">
-            <li class="download__item">
-              <a class="download__item--apple" href="https://www.apple.com/ru/itunes/">
-                <img src="http://placehold.it/150x100" alt="Скачать для Apple" width="" height="">
-              </a>
-            </li>
+        <ul class="download__list">
+          <li class="download__item">
+            <a class="download__link download__link--apple" href="https://www.apple.com/ru/itunes/">
+              <img src="http://placehold.it/150x100" alt="Скачать для Apple" width="" height="">
+            </a>
+          </li>
 
-            <li class="download__item">
-              <a class="download__item--andriod" href="https://play.google.com/">
-                <img src="http://placehold.it/150x100" alt="Скачать для Android" width="" height="">
-              </a>
-            </li>
+          <li class="download__item">
+            <a class="download__link download__link--andriod" href="https://play.google.com/">
+              <img src="http://placehold.it/150x100" alt="Скачать для Android" width="" height="">
+            </a>
+          </li>
 
-            <li class="download__item">
-              <a class="download__item--windows" href="https://microsoftstore.ru/">
-                <img src="http://placehold.it/150x100" alt="Скачать для Windows" width="" height="">
-              </a>
-            </li>
-          </ul>
-        </div>
+          <li class="download__item">
+            <a class="download__link download__link--windows" href="https://microsoftstore.ru/">
+              <img src="http://placehold.it/150x100" alt="Скачать для Windows" width="" height="">
+            </a>
+          </li>
+        </ul>
+
         <p class="download__intro">
           Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8
         </p>
@@ -121,7 +120,7 @@
         <div class="rewiwes__wrapper slider">
           <h2 class="visually-hidden">Отзывы о приложении</h2>
           <div class="rewiwes__list slider__list">
-            <blockquote class="rewiwes__item slider-item">
+            <blockquote class="rewiwes__item slider__item">
               <b class="rewiwes__autor">Николай Петров</b>
 
               <p class="rewiwes__text">
@@ -129,7 +128,7 @@
               </p>
             </blockquote>
 
-            <blockquote class="rewiwes__item slider-item">
+            <blockquote class="rewiwes__item slider__item">
               <b class="rewiwes__autor">Николай Петров</b>
 
               <p class="rewiwes__text">
@@ -137,7 +136,7 @@
               </p>
             </blockquote>
 
-            <blockquote class="rewiwes__item slider-item">
+            <blockquote class="rewiwes__item slider__item">
               <b class="rewiwes__autor">Николай Петров</b>
 
               <p class="rewiwes__text">
@@ -163,7 +162,17 @@
           <div class="tarrifs__list slider__list">
             <table class="tarrifs__item slider__item">
               <tr>
+                <th class="tariffs__title title">
+                  <b class="title__name">Стандарт</b>
+                  <p class="title__price">3,99 USD</p>
+                </th>
+
                 <th class="tariffs__title tariffs__title--hit title">
+                  <b class="title__name">Стандарт</b>
+                  <p class="title__price">3,99 USD</p>
+                </th>
+
+                <th class="tariffs__title title">
                   <b class="title__name">Стандарт</b>
                   <p class="title__price">3,99 USD</p>
                 </th>
@@ -173,9 +182,25 @@
                 <td class="tarrifs__options tarrifs__options--checked">
                   Розовый фильтр
                 </td>
+
+                <td class="tarrifs__options tarrifs__options--checked">
+                  Розовый фильтр
+                </td>
+
+                <td class="tarrifs__options tarrifs__options--checked">
+                  Розовый фильтр
+                </td>
               </tr>
 
               <tr>
+                <td class="tarrifs__options tarrifs__options--disable">
+                  Смайлики
+                </td>
+
+                <td class="tarrifs__options tarrifs__options--checked">
+                  Смайлики
+                </td>
+
                 <td class="tarrifs__options tarrifs__options--checked">
                   Смайлики
                 </td>
@@ -185,57 +210,11 @@
                 <td class="tarrifs__options tarrifs__options--disable">
                   Комментарии
                 </td>
-              </tr>
-            </table>
 
-            <table class="tarrifs__item slider__item">
-              <tr>
-                <th class="tariffs__title tariffs__title--hit title">
-                  <b class="title__name">Стандарт</b>
-                  <p class="title__price">3,99 USD</p>
-                </th>
-              </tr>
-
-              <tr>
-                <td class="tarrifs__options tarrifs__options--checked">
-                  Розовый фильтр
-                </td>
-              </tr>
-
-              <tr>
-                <td class="tarrifs__options tarrifs__options--checked">
-                  Смайлики
-                </td>
-              </tr>
-
-              <tr>
                 <td class="tarrifs__options tarrifs__options--disable">
                   Комментарии
                 </td>
-              </tr>
-            </table>
 
-            <table class="tarrifs__item slider__item">
-              <tr>
-                <th class="tariffs__title tariffs__title--hit title">
-                  <b class="title__name">Стандарт</b>
-                  <p class="title__price">3,99 USD</p>
-                </th>
-              </tr>
-
-              <tr>
-                <td class="tarrifs__options tarrifs__options--checked">
-                  Розовый фильтр
-                </td>
-              </tr>
-
-              <tr>
-                <td class="tarrifs__options tarrifs__options--checked">
-                  Смайлики
-                </td>
-              </tr>
-
-              <tr>
                 <td class="tarrifs__options tarrifs__options--disable">
                   Комментарии
                 </td>

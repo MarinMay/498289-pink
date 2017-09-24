@@ -38,25 +38,26 @@
     <main class="page-main">
       <h1 class="page-main__title">Конкурс на самое безбашенное путешествие с Пинк</h1>
 
-      <section class="form">
+      <section class="fields">
         <h2 class="visually-hidden">Поля для заполнения</h2>
-        <p class="form__description">
+
+        <p class="fields__description">
           Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту! Пожалуйста, заполните
         </p>
 
-        <form action="https://echo.htmlacademy.ru" method="POST">
+        <form class="form" action="https://echo.htmlacademy.ru" method="POST">
           <fieldset class="form__full-name full-name">
-            <label class="full-name__surname">
+            <label class="full-name__field full-name__field--surname">
               Фамилия:
               <input type="text" name="surname" placeholder="Укажите вашу фамилию*" required>
             </label>
 
-            <label class="full-name__name">
+            <label class="full-name__field full-name__field--name">
               Имя:
               <input type="text" name="name" placeholder="Укажите ваше имя*" required>
             </label>
 
-            <label class="full-name__patronymic">
+            <label class="full-name__field full-name__field--patronymic">
               Отчество:
               <input type="text" name="patronymic" placeholder="Ну и отчество тоже">
             </label>
@@ -99,12 +100,12 @@
           </fieldset>
 
           <fieldset class="form__contacts contacts">
-            <label class="contacts__phone">
+            <label class="contacts__item contacts__item--phone">
               Номер телефона
               <input type="tel" name="phone-number" placeholder="Номер, пожалуйста">
             </label>
 
-            <label class="contacts__email">
+            <label class="contacts__item contacts__item--email">
               Адрес почты
               <input type="email" name="email" placeholder="Введите почту*" required>
             </label>
@@ -112,17 +113,17 @@
 
           <fieldset class="form__app app">
             <p class="form__title">С каким приложением путешествовали?</p>
-            <label class="app__ios">
+            <label class="app__item app__item--ios">
               <input type="radio" name="app" value="iOS" checked>
               Pink для iOS
             </label>
 
-            <label class="app__android">
+            <label class="app__item app__item--android">
               <input type="radio" name="app" value="Android">
               Pink на Android
             </label>
 
-            <label class="app__windows">
+            <label class="app__item app__item--windows">
               <input type="radio" name="app" value="Windows">
               Windows Phone
             </label>
@@ -133,7 +134,7 @@
             <textarea class="emotion__describe" name="describe-emotion" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
           </fieldset>
 
-          <button type="submit">Отправить форму</button>
+          <button class="form__button button" type="submit">Отправить форму</button>
 
           <p class="form__footnote">
             <span class="star">*</span> &#8212; обязательные поля
@@ -141,7 +142,7 @@
         </form>
       </section>
 
-      <section class="form__sent pop-up">
+      <section class="pop-up pop-up--sent">
         <h2 class="pop-up__title">Ваша заявка отправлена</h2>
 
         <p class="pop-up__text">
@@ -149,18 +150,18 @@
         </p>
 
         <div class="button-wrapper">
-          <button class="pop-up__close">Закрыть окно</button>
+          <button class="pop-up__close button" type="button">Закрыть окно</button>
         </div>
       </section>
 
-      <section class="form__error pop-up">
+      <section class="pop-up--error">
         <h2 class="pop-up__title">Что-то пошло не так</h2>
 
         <p class="pop-up__text">
           Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить
         </p>
 
-        <button class="pop-up__close">ок</button>
+        <button class="pop-up__close button" type="button">ок</button>
       </section>
     </main>
 
