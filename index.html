@@ -5,8 +5,260 @@
     <title>HTML Academy: Пинк</title>
   </head>
   <body>
+    <header class="page-header">
+      <a class="page-header__logo">
+        <img src="http://placehold.it/150x100" alt="PINK" width="" height="">
+      </a>
 
-    <p>Репозиторий создан для обучения на интенсивном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/adaptive">Продвинутый HTML и CSS</a>».</p>
+      <nav class="main-nav">
+        <button class="main-nav__toggle" type="button">Открыть меню</button>
 
+        <div class="main-nav__wrapper">
+          <ul class="main-nav__list site-list">
+            <li class="site-list__item">
+              <a>Главная</a>
+            </li>
+
+            <li class="site-list__item">
+              <a href="photo.html">Фотографии</a>
+            </li>
+
+            <li class="site-list__item">
+              <a href="form.html">Конкурс</a>
+            </li>
+
+            <li class="site-list__item">
+              <a href="https://htmlacademy.ru/">HTML-Academy</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <main class="page-main">
+      <h1 class="visually-hidden">Приложение для избавления от серости</h1>
+
+      <section class="download">
+        <h2 class="visually-hidden">Ссылки на скачивание приложения</h2>
+
+        <div class="promo">
+          <img class="promo__image" src="http://placehold.it/150x100" alt="Представление приложения" width="" height="">
+        </div>
+
+        <a class="download__button button" href="https://www.apple.com/ru/itunes/">Скачать приложение</a>
+
+        <ul class="download__list">
+          <li class="download__item">
+            <a class="download__link download__link--apple" href="https://www.apple.com/ru/itunes/">
+              <img src="http://placehold.it/150x100" alt="Скачать для Apple" width="" height="">
+            </a>
+          </li>
+
+          <li class="download__item">
+            <a class="download__link download__link--andriod" href="https://play.google.com/">
+              <img src="http://placehold.it/150x100" alt="Скачать для Android" width="" height="">
+            </a>
+          </li>
+
+          <li class="download__item">
+            <a class="download__link download__link--windows" href="https://microsoftstore.ru/">
+              <img src="http://placehold.it/150x100" alt="Скачать для Windows" width="" height="">
+            </a>
+          </li>
+        </ul>
+
+        <p class="download__intro">
+          Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8
+        </p>
+      </section>
+
+      <section class="advantages">
+        <h2 class="visually-hidden">Преимущества приложения PINK</h2>
+
+        <div class="advantages__intro intro">
+          <p class="intro__slogan">
+            Устали от серости мегаполиса?
+          </p>
+
+          <p class="intro__slogan">
+            Нам есть, что вам  предложить!
+          </p>
+        </div>
+
+        <ul class="advantages__list">
+          <li class="advantages__item">
+            <h3 class="advantages__title">Поднимает настроение</h3>
+
+            <p class="advantages__description">
+              Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!
+            </p>
+          </li>
+
+          <li class="advantages__item">
+            <h3 class="advantages__title">Меняет мир вокруг</h3>
+
+            <p class="advantages__description">
+              Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект
+            </p>
+          </li>
+
+          <li class="advantages__item">
+            <h3 class="advantages__title">Заводит новых друзей</h3>
+
+            <p class="advantages__description">
+              Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых
+            </p>
+          </li>
+        </ul>
+
+        <div class="advantages__image">
+          <img src="http://placehold.it/150x100" alt="Пример работы приложения" width="" height="">
+        </div>
+      </section>
+
+      <section class="reviews">
+        <div class="rewiwes__wrapper slider">
+          <h2 class="visually-hidden">Отзывы о приложении</h2>
+          <div class="rewiwes__list slider__list">
+            <blockquote class="rewiwes__item slider__item">
+              <b class="rewiwes__autor">Николай Петров</b>
+
+              <p class="rewiwes__text">
+                «Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»
+              </p>
+            </blockquote>
+
+            <blockquote class="rewiwes__item slider__item">
+              <b class="rewiwes__autor">Николай Петров</b>
+
+              <p class="rewiwes__text">
+                «Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»
+              </p>
+            </blockquote>
+
+            <blockquote class="rewiwes__item slider__item">
+              <b class="rewiwes__autor">Николай Петров</b>
+
+              <p class="rewiwes__text">
+                «Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»
+              </p>
+            </blockquote>
+          </div><!--end .rewiwes__list-->
+
+          <p class="reviews__toggles slider__toggles">
+            <button class="slider__toggle" type="button">1</button>
+
+            <button class="slider__toggle" type="button">2</button>
+
+            <button class="slider__toggle" type="button">3</button>
+          </p>
+        </div><!--end .rewiwes__wrapper-->
+      </section>
+
+      <section class="tariffs">
+        <div class="tarrifs__wrapper slider">
+          <h2 class="visually-hidden">Тарифы</h2>
+
+          <div class="tarrifs__list slider__list">
+            <table class="tarrifs__item slider__item">
+              <tr>
+                <th class="tariffs__title title">
+                  <b class="title__name">Стандарт</b>
+                  <p class="title__price">3,99 USD</p>
+                </th>
+
+                <th class="tariffs__title tariffs__title--hit title">
+                  <b class="title__name">Стандарт</b>
+                  <p class="title__price">3,99 USD</p>
+                </th>
+
+                <th class="tariffs__title title">
+                  <b class="title__name">Стандарт</b>
+                  <p class="title__price">3,99 USD</p>
+                </th>
+              </tr>
+
+              <tr>
+                <td class="tarrifs__options tarrifs__options--checked">
+                  Розовый фильтр
+                </td>
+
+                <td class="tarrifs__options tarrifs__options--checked">
+                  Розовый фильтр
+                </td>
+
+                <td class="tarrifs__options tarrifs__options--checked">
+                  Розовый фильтр
+                </td>
+              </tr>
+
+              <tr>
+                <td class="tarrifs__options tarrifs__options--disable">
+                  Смайлики
+                </td>
+
+                <td class="tarrifs__options tarrifs__options--checked">
+                  Смайлики
+                </td>
+
+                <td class="tarrifs__options tarrifs__options--checked">
+                  Смайлики
+                </td>
+              </tr>
+
+              <tr>
+                <td class="tarrifs__options tarrifs__options--disable">
+                  Комментарии
+                </td>
+
+                <td class="tarrifs__options tarrifs__options--disable">
+                  Комментарии
+                </td>
+
+                <td class="tarrifs__options tarrifs__options--disable">
+                  Комментарии
+                </td>
+              </tr>
+            </table>
+          </div>
+
+          <div class="toggles">
+            <p class="reviews__toggles slider__toggles">
+            <button class="slider__toggle" type="button">1</button>
+
+            <button class="slider__toggle" type="button">2</button>
+
+            <button class="slider__toggle" type="button">3</button>
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="contacts">
+        <div class="contacts__wrapper">
+          <p class="contacts__text">
+            Остались вопросы? Свяжитесь с нами!
+          </p>
+
+          <p class="contacts__phone">
+            <span class="contacts__title">Звоните:</span>
+            +7 (812) 555-66-66
+          </p>
+
+          <p class="contacts__email">
+            <span class="contacts__title">Пишите:</span>
+            mail@htmlacademy.ru
+          </p>
+
+          <p class="contacts__address">
+            <span class="contacts__title">Приезжайте в гости:</span>
+            ул. Большая Конюшенная, 19/8
+          </p>
+        </div>
+
+        <div class="contacts__map">
+        </div>
+      </section>
+    </main>
   </body>
 </html>
