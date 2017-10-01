@@ -9,11 +9,13 @@
     <div class="container">
       <header class="page-header">
         <a class="page-header__logo">
-          <img src="img/logo-pink-white-mobile.svg" alt="PINK" width="" height=""><!--временно-->
+          <img src="img/logo-pink-white-mobile.svg" alt="PINK" width="76" height="24"><!--временно-->
         </a>
 
         <nav class="main-nav">
-          <button class="main-nav__toggle" type="button">Открыть меню</button>
+          <button class="main-nav__toggle" type="button">
+            <span class="visually-hidden">Открыть меню</span>
+          </button>
 
           <div class="main-nav__wrapper">
             <ul class="main-nav__list">
@@ -30,7 +32,7 @@
               </li>
 
               <li class="main-nav__item">
-                <a class="main-nav__link" href="https://htmlacademy.ru/">HTML-Academy</a>
+                <a class="main-nav__link" href="https://htmlacademy.ru/">HTML Academy</a>
               </li>
             </ul>
           </div>
@@ -44,7 +46,9 @@
           <h2 class="visually-hidden">Ссылки на скачивание приложения</h2>
 
           <div class="promo">
-            <img class="promo__image" src="img/iphone-hand-mobile@1x.png" alt="Представление приложения" width="258" height="286">
+            <div class="promo__image">
+              <img src="img/iphone-hand-mobile@1x.png" alt="Представление приложения" width="258" height="286">
+            </div>
           </div>
 
           <a class="download__button button" href="https://www.apple.com/ru/itunes/">Скачать приложение</a>

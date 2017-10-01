@@ -9,11 +9,13 @@
     <div class="container">
       <header class="page-header">
         <a class="page-header__logo" href="index.html">
-          <img src="http://placehold.it/150x100" alt="PINK" width="" height="">
+          <img src="img/logo-pink-white-mobile.svg" alt="PINK" width="76" height="24"><!--временно-->
         </a>
 
         <nav class="main-nav">
-          <button class="main-nav__toggle" type="button">Открыть меню</button>
+          <button class="main-nav__toggle" type="button">
+            <span class="visually-hidden">Открыть меню</span>
+          </button>
 
           <div class="main-nav__wrapper">
             <ul class="main-nav__list">
@@ -30,7 +32,7 @@
               </li>
 
               <li class="main-nav__item">
-                <a class="main-nav__link" href="https://htmlacademy.ru/">HTML-Academy</a>
+                <a class="main-nav__link" href="https://htmlacademy.ru/">HTML Academy</a>
               </li>
             </ul>
           </div>
@@ -47,13 +49,13 @@
 
           <article class="post post--panorama">
             <a class="post__image"  href="#">
-              <img src="http://placehold.it/150x100" alt="Фотография Анны" width="" height="">
+              <img src="img/panorama-mobile@1x.jpg" alt="Фотография Анны" width="320" height="137">
             </a>
 
-            <div class="post__description description">
+            <div class="post__description">
               <p class="post__time"><b class="post__autor">Анна</b>(5 минут назад)</p>
 
-              <p class="description__text">
+              <p class="post__text">
                 Прыгать или нет? Напишите в коментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!
               </p>
 
@@ -66,13 +68,13 @@
 
           <article class="post">
             <a class="post__image"  href="#">
-              <img src="http://placehold.it/150x100" alt="Фотография Левона" width="" height="">
+              <img src="img/photo-car-mobile@1x.jpg" alt="Фотография Левона" width="280" height="180">
             </a>
 
-            <div class="post__description description">
+            <div class="post__description">
               <p class="post__time"><b class="post__autor">Левон</b>(5 часов назад)</p>
 
-              <p class="description__text">
+              <p class="post__text">
                 Вчера он на луну летал, сегодня в руки к нам попал.
               </p>
 
@@ -85,13 +87,13 @@
 
           <article class="post">
             <a class="post__image" href="#">
-              <img src="http://placehold.it/150x100" alt="Фотография Антона" width="" height="">
+              <img src="img/photo-drumset-mobile@1x.jpg" alt="Фотография Антона" width="280" height="180">
             </a>
 
-            <div class="post__description description">
+            <div class="post__description">
               <p class="post__time"><b class="post__autor">Антон</b>(12 часов назад)</p>
 
-              <p class="description__text">
+              <p class="post__text">
                 Соседи будут рады
               </p>
 
@@ -104,13 +106,13 @@
 
           <article class="post">
             <a class="post__image"  href="#">
-              <img src="http://placehold.it/150x100" alt="Фотография Бориса" width="" height="">
+              <img src="img/photo-window-mobile@1x.jpg" alt="Фотография Бориса" width="280" height="180">
             </a>
 
-            <div class="post__description description">
+            <div class="post__description">
               <p class="post__time"><b class="post__autor">Борис</b>(20 часов назад)</p>
 
-              <p class="description__text">
+              <p class="post__text">
                 Здесь могла быть ваша цитата о высоком и вечном.
               </p>
 
@@ -123,13 +125,13 @@
 
           <article class="post">
             <a class="post__image"  href="#">
-              <img src="http://placehold.it/150x100" alt="Фото Сергея" width="" height="">
+              <img src="img/photo-fair-mobile@1x.jpg" alt="Фото Сергея" width="280" height="180">
             </a>
 
-            <div class="post__description description">
+            <div class="post__description">
               <p class="post__time"><b class="post__autor">Сергей</b>(25 часов назад)</p>
 
-              <p class="description__text">
+              <p class="post__text">
                 Самая кубанская в мире!
               </p>
 
@@ -142,13 +144,13 @@
 
           <article class="post">
             <a class="post__image"  href="#">
-              <img src="http://placehold.it/150x100" alt="Фотография Максима" width="" height="">
+              <img src="img/photo-pov-mobile@1x.jpg" alt="Фотография Максима" width="280" height="180">
             </a>
 
-            <div class="post__description description">
+            <div class="post__description">
               <p class="post__time"><b class="post__autor">Максим</b>(40 часов назад)</p>
 
-              <p class="description__text">
+              <p class="post__text">
                 Где снег то?
               </p>
 
@@ -161,13 +163,13 @@
 
           <article class="post">
             <a class="post__image"  href="#">
-              <img src="http://placehold.it/150x100" alt="Фотография Надежды" width="" height="">
+              <img src="img/photo-wing-mobile@1x.jpg" alt="Фотография Надежды" width="280" height="180">
             </a>
 
-            <div class="post__description description">
+            <div class="post__description">
               <p class="post__time"><b class="post__autor">Надежда</b>(45 часов назад)</p>
 
-              <p class="description__text">
+              <p class="post__text">
                 Всем GM и взаимные лайки!
               </p>
 
@@ -178,8 +180,9 @@
             </div>
           </article>
 
-          <p class="photo__text">
-            Затмите их всех! Выкладывайте все, что накопилось в телефоне!
+          <p class="photo__text photo__text--end">
+            Затмите их всех!
+            Выкладывайте все, что накопилось в телефоне!
           </p>
         </section>
 
@@ -187,21 +190,27 @@
           <h2 class="visually-hidden">Интерфейс приложения</h2>
 
           <div class="upload__photo">
-            <img src="http://placehold.it/150x100" alt="Выгружаемая фотография" width="" height="">
+            <img src="img/photo-road-mobile@1x.jpg" alt="Выгружаемая фотография" width="280" height="374">
           </div>
 
           <div class="editing-photo">
             <ul class="editing-photo__list">
               <li class="editing-photo__item">
-                <button class="editing-photo__button editing-photo__button--crop"></button>
+                <button class="editing-photo__button editing-photo__button--crop" type="button">
+                  <span class="visually-hidden">Кадрировать фото</span>
+                </button>
               </li>
 
               <li class="editing-photo__item">
-                <button class="editing-photo__button editing-photo__button--fill"></button>
+                <button class="editing-photo__button editing-photo__button--fill" type="button">
+                  <span class="visually-hidden">Залить розовым</span>
+                </button>
               </li>
 
               <li class="editing-photo__item">
-                <button class="editing-photo__button editing-photo__button--contrast"></button>
+                <button class="editing-photo__button editing-photo__button--contrast" type="button">
+                  <span class="visually-hidden">Настроить контраст</span>
+                </button>
               </li>
             </ul>
           </div>
@@ -213,28 +222,36 @@
 
       <footer class="page-footer">
         <div class="page-footer__logo">
-          Логотип PINK
+          <span class="visually-hidden">Логотип PINK</span>
         </div>
 
         <div class="page-footer__social social">
           <ul class="social__list">
             <li class="social__item">
-              <a class="social__link social__link--twitter" href="#">Twitter</a>
+              <a class="social__link social__link--twitter" href="#">
+                <span class="visually-hidden">Twitter</span>
+              </a>
             </li>
 
             <li class="social__item">
-              <a class="social__link social__link--facebook" href="#">Facebook</a>
+              <a class="social__link social__link--facebook" href="#">
+                <span class="visually-hidden">Facebook</span>
+              </a>
             </li>
 
             <li class="social__item">
-            <a class="social__link social__link--youtube" href="#">Youtube</a>
+              <a class="social__link social__link--youtube" href="#">
+                <span class="visually-hidden">Youtube</span>
+              </a>
             </li>
           </ul>
         </div>
 
         <div class="footer__copyright copyright">
           Разработано:
-          <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML-Academy</a>
+          <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
+            <span class="visually-hidden">HTML Academy</span>
+          </a>
         </div>
       </footer>
     </div><!--end .container-->

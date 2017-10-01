@@ -1,0 +1,51 @@
+.upload {
+  margin-bottom: 40px;
+  background-color: @gray-light;
+  .outline ();
+}
+
+.upload__photo {
+  width: 280px;
+  height: 374px;
+  margin: 0 auto 42px auto;
+  padding-top: 20px;
+  line-height: 0;
+}
+
+.upload__button {
+  margin: 0 auto 12px auto;
+  background-color: transparent;
+}
+
+.upload__button--post {
+  color: @color-extra;
+  border-color: @color-extra;
+
+  &:hover,
+  &:focus {
+    color: @color-secondary;
+    background-color: @color-extra;
+  }
+
+  &:active {
+    color: @color-secondary-opacity-30;
+    background-color: @color-extra;
+  }
+}
+
+.upload__button--cancel {
+  opacity: 0.1;
+  color: @color-main;
+  border-color: @color-main;
+
+  &:hover,
+  &:focus {
+    opacity: 0.3;
+  }
+
+  &:active {
+    opacity: 0.3;
+    color: @color-secondary;
+    background-color: @color-main;
+  }
+}
