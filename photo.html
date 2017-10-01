@@ -3,237 +3,240 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Пинк. Фотографии</title>
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
-    <header class="page-header">
-      <a class="page-header__logo" href="index.html">
-        <img src="http://placehold.it/150x100" alt="PINK" width="" height="">
-      </a>
+    <div class="container">
+      <header class="page-header">
+        <a class="page-header__logo" href="index.html">
+          <img src="http://placehold.it/150x100" alt="PINK" width="" height="">
+        </a>
 
-      <nav class="main-nav">
-        <button class="main-nav__toggle" type="button">Открыть меню</button>
+        <nav class="main-nav">
+          <button class="main-nav__toggle" type="button">Открыть меню</button>
 
-        <div class="main-nav__wrapper">
-          <ul class="main-nav__list site-list">
-            <li class="site-list__item">
-              <a href="index.html">Главная</a>
+          <div class="main-nav__wrapper">
+            <ul class="main-nav__list">
+              <li class="main-nav__item">
+                <a class="main-nav__link" href="index.html">Главная</a>
+              </li>
+
+              <li class="main-nav__item">
+                <a class="main-nav__link main-nav__link--current">Фотографии</a>
+              </li>
+
+              <li class="main-nav__item">
+                <a class="main-nav__link" href="form.html">Конкурс</a>
+              </li>
+
+              <li class="main-nav__item">
+                <a class="main-nav__link" href="https://htmlacademy.ru/">HTML-Academy</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </header>
+
+      <main class="page-main">
+        <h1 class="page-main__title">Фотографии пользователей</h1>
+
+        <section class="photo">
+          <p class="photo__text">
+            Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?
+          </p>
+
+          <article class="post post--panorama">
+            <a class="post__image"  href="#">
+              <img src="http://placehold.it/150x100" alt="Фотография Анны" width="" height="">
+            </a>
+
+            <div class="post__description description">
+              <p class="post__time"><b class="post__autor">Анна</b>(5 минут назад)</p>
+
+              <p class="description__text">
+                Прыгать или нет? Напишите в коментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!
+              </p>
+
+              <div class="like">
+                <button class="like__button" type="button"></button>
+                <span class="like__number">Нравится: 215</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="post">
+            <a class="post__image"  href="#">
+              <img src="http://placehold.it/150x100" alt="Фотография Левона" width="" height="">
+            </a>
+
+            <div class="post__description description">
+              <p class="post__time"><b class="post__autor">Левон</b>(5 часов назад)</p>
+
+              <p class="description__text">
+                Вчера он на луну летал, сегодня в руки к нам попал.
+              </p>
+
+              <div class="like">
+                <button class="like__button" type="button"></button>
+                <span class="like__number">Нравится: 356</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="post">
+            <a class="post__image" href="#">
+              <img src="http://placehold.it/150x100" alt="Фотография Антона" width="" height="">
+            </a>
+
+            <div class="post__description description">
+              <p class="post__time"><b class="post__autor">Антон</b>(12 часов назад)</p>
+
+              <p class="description__text">
+                Соседи будут рады
+              </p>
+
+              <div class="like">
+                <button class="like__button" type="button"></button>
+                <span class="like__number">Нравится: 666</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="post">
+            <a class="post__image"  href="#">
+              <img src="http://placehold.it/150x100" alt="Фотография Бориса" width="" height="">
+            </a>
+
+            <div class="post__description description">
+              <p class="post__time"><b class="post__autor">Борис</b>(20 часов назад)</p>
+
+              <p class="description__text">
+                Здесь могла быть ваша цитата о высоком и вечном.
+              </p>
+
+              <div class="like">
+                <button class="like__button" type="button"></button>
+                <span class="like__number">Нравится: 215</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="post">
+            <a class="post__image"  href="#">
+              <img src="http://placehold.it/150x100" alt="Фото Сергея" width="" height="">
+            </a>
+
+            <div class="post__description description">
+              <p class="post__time"><b class="post__autor">Сергей</b>(25 часов назад)</p>
+
+              <p class="description__text">
+                Самая кубанская в мире!
+              </p>
+
+              <div class="like">
+                <button class="like__button" type="button"></button>
+                <span class="like__number">Нравится: 4</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="post">
+            <a class="post__image"  href="#">
+              <img src="http://placehold.it/150x100" alt="Фотография Максима" width="" height="">
+            </a>
+
+            <div class="post__description description">
+              <p class="post__time"><b class="post__autor">Максим</b>(40 часов назад)</p>
+
+              <p class="description__text">
+                Где снег то?
+              </p>
+
+              <div class="like">
+                <button class="like__button" type="button"></button>
+                <span class="like__number">Нравится: 150</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="post">
+            <a class="post__image"  href="#">
+              <img src="http://placehold.it/150x100" alt="Фотография Надежды" width="" height="">
+            </a>
+
+            <div class="post__description description">
+              <p class="post__time"><b class="post__autor">Надежда</b>(45 часов назад)</p>
+
+              <p class="description__text">
+                Всем GM и взаимные лайки!
+              </p>
+
+              <div class="like">
+                <button class="like__button" type="button"></button>
+                <span class="like__number">Нравится: 2560</span>
+              </div>
+            </div>
+          </article>
+
+          <p class="photo__text">
+            Затмите их всех! Выкладывайте все, что накопилось в телефоне!
+          </p>
+        </section>
+
+        <section class="upload">
+          <h2 class="visually-hidden">Интерфейс приложения</h2>
+
+          <div class="upload__photo">
+            <img src="http://placehold.it/150x100" alt="Выгружаемая фотография" width="" height="">
+          </div>
+
+          <div class="editing-photo">
+            <ul class="editing-photo__list">
+              <li class="editing-photo__item">
+                <button class="editing-photo__button editing-photo__button--crop"></button>
+              </li>
+
+              <li class="editing-photo__item">
+                <button class="editing-photo__button editing-photo__button--fill"></button>
+              </li>
+
+              <li class="editing-photo__item">
+                <button class="editing-photo__button editing-photo__button--contrast"></button>
+              </li>
+            </ul>
+          </div>
+
+          <button class="upload__button upload__button--post button" type="submit">Запостить</button>
+          <button class="upload__button upload__button--cancel button" type="reset">Отмена</button>
+        </section>
+      </main>
+
+      <footer class="page-footer">
+        <div class="page-footer__logo">
+          Логотип PINK
+        </div>
+
+        <div class="page-footer__social social">
+          <ul class="social__list">
+            <li class="social__item">
+              <a class="social__link social__link--twitter" href="#">Twitter</a>
             </li>
 
-            <li class="site-list__item">
-              <a>Фотографии</a>
+            <li class="social__item">
+              <a class="social__link social__link--facebook" href="#">Facebook</a>
             </li>
 
-            <li class="site-list__item">
-              <a href="form.html">Конкурс</a>
-            </li>
-
-            <li class="site-list__item">
-              <a href="https://htmlacademy.ru/">HTML-Academy</a>
+            <li class="social__item">
+            <a class="social__link social__link--youtube" href="#">Youtube</a>
             </li>
           </ul>
         </div>
-      </nav>
-    </header>
 
-    <main class="page-main">
-      <h1 class="page-main__title">Фотографии пользователей</h1>
-
-      <section class="photo">
-        <p class="photo__text">
-          Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?
-        </p>
-
-        <article class="post post--panorama">
-          <a class="post__image"  href="#">
-            <img src="http://placehold.it/150x100" alt="Фотография Анны" width="" height="">
-          </a>
-
-          <div class="post__description description">
-            <p class="post__time"><b class="post__autor">Анна</b>(5 минут назад)</p>
-
-            <p class="description__text">
-              Прыгать или нет? Напишите в коментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!
-            </p>
-
-            <div class="like">
-              <button class="like__button" type="button"></button>
-              <span class="like__number">Нравится: 215</span>
-            </div>
-          </div>
-        </article>
-
-        <article class="post">
-          <a class="post__image"  href="#">
-            <img src="http://placehold.it/150x100" alt="Фотография Левона" width="" height="">
-          </a>
-
-          <div class="post__description description">
-            <p class="post__time"><b class="post__autor">Левон</b>(5 часов назад)</p>
-
-            <p class="description__text">
-              Вчера он на луну летал, сегодня в руки к нам попал.
-            </p>
-
-            <div class="like">
-              <button class="like__button" type="button"></button>
-              <span class="like__number">Нравится: 356</span>
-            </div>
-          </div>
-        </article>
-
-        <article class="post">
-          <a class="post__image" href="#">
-            <img src="http://placehold.it/150x100" alt="Фотография Антона" width="" height="">
-          </a>
-
-          <div class="post__description description">
-            <p class="post__time"><b class="post__autor">Антон</b>(12 часов назад)</p>
-
-            <p class="description__text">
-              Соседи будут рады
-            </p>
-
-            <div class="like">
-              <button class="like__button" type="button"></button>
-              <span class="like__number">Нравится: 666</span>
-            </div>
-          </div>
-        </article>
-
-        <article class="post">
-          <a class="post__image"  href="#">
-            <img src="http://placehold.it/150x100" alt="Фотография Бориса" width="" height="">
-          </a>
-
-          <div class="post__description description">
-            <p class="post__time"><b class="post__autor">Борис</b>(20 часов назад)</p>
-
-            <p class="description__text">
-              Здесь могла быть ваша цитата о высоком и вечном.
-            </p>
-
-            <div class="like">
-              <button class="like__button" type="button"></button>
-              <span class="like__number">Нравится: 215</span>
-            </div>
-          </div>
-        </article>
-
-        <article class="post">
-          <a class="post__image"  href="#">
-            <img src="http://placehold.it/150x100" alt="Фото Сергея" width="" height="">
-          </a>
-
-          <div class="post__description description">
-            <p class="post__time"><b class="post__autor">Сергей</b>(25 часов назад)</p>
-
-            <p class="description__text">
-              Самая кубанская в мире!
-            </p>
-
-            <div class="like">
-              <button class="like__button" type="button"></button>
-              <span class="like__number">Нравится: 4</span>
-            </div>
-          </div>
-        </article>
-
-        <article class="post">
-          <a class="post__image"  href="#">
-            <img src="http://placehold.it/150x100" alt="Фотография Максима" width="" height="">
-          </a>
-
-          <div class="post__description description">
-            <p class="post__time"><b class="post__autor">Максим</b>(40 часов назад)</p>
-
-            <p class="description__text">
-              Где снег то?
-            </p>
-
-            <div class="like">
-              <button class="like__button" type="button"></button>
-              <span class="like__number">Нравится: 150</span>
-            </div>
-          </div>
-        </article>
-
-        <article class="post">
-          <a class="post__image"  href="#">
-            <img src="http://placehold.it/150x100" alt="Фотография Надежды" width="" height="">
-          </a>
-
-          <div class="post__description description">
-            <p class="post__time"><b class="post__autor">Надежда</b>(45 часов назад)</p>
-
-            <p class="description__text">
-              Всем GM и взаимные лайки!
-            </p>
-
-            <div class="like">
-              <button class="like__button" type="button"></button>
-              <span class="like__number">Нравится: 2560</span>
-            </div>
-          </div>
-        </article>
-
-        <p class="photo__text">
-          Затмите их всех! Выкладывайте все, что накопилось в телефоне!
-        </p>
-      </section>
-
-      <section class="upload">
-        <h2 class="visually-hidden">Интерфейс приложения</h2>
-
-        <div class="upload__photo">
-          <img src="http://placehold.it/150x100" alt="Выгружаемая фотография" width="" height="">
+        <div class="footer__copyright copyright">
+          Разработано:
+          <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML-Academy</a>
         </div>
-
-        <div class="editing-photo">
-          <ul class="editing-photo__list">
-            <li class="editing-photo__item">
-              <button class="editing-photo__button editing-photo__button--crop"></button>
-            </li>
-
-            <li class="editing-photo__item">
-              <button class="editing-photo__button editing-photo__button--fill"></button>
-            </li>
-
-            <li class="editing-photo__item">
-              <button class="editing-photo__button editing-photo__button--contrast"></button>
-            </li>
-          </ul>
-        </div>
-
-        <button class="upload__button upload__button--post" type="submit">Запостить</button>
-        <button class="upload__button upload__button--cancel" type="reset">Отмена</button>
-      </section>
-    </main>
-
-    <footer class="page-footer">
-      <div class="page-footer__logo">
-        Логотип PINK
-      </div>
-
-      <div class="page-footer__social social">
-        <ul class="social__list">
-          <li class="social__item">
-            <a class="social__link social__link--twitter" href="#">Twitter</a>
-          </li>
-
-          <li class="social__item">
-            <a class="social__link social__link--facebook" href="#">Facebook</a>
-          </li>
-
-          <li class="social__item">
-          <a class="social__link social__link--youtube" href="#">Youtube</a>
-          </li>
-        </ul>
-      </div>
-
-      <div class="footer__copyright copyright">
-        Разработано:
-        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML-Academy</a>
-      </div>
-    </footer>
+      </footer>
+    </div><!--end .container-->
   </body>
 </html>

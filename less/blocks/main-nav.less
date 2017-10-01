@@ -1,0 +1,30 @@
+.main-nav {
+  position: relative;
+}
+
+.main-nav__wrapper {
+  outline: 1px solid #7bec30;
+}
+
+.main-nav__list {
+    .list-style-reset();
+}
+
+.main-nav__item {
+  padding: 16px 0;
+}
+
+.main-nav__link {
+  text-transform: uppercase;
+  color: @color-secondary;
+
+  &:hover, &:focus {
+    color: @color-extra;
+  }
+}
+
+.main-nav__link--current {
+  &:hover, &:focus {
+    color: @color-secondary;
+  }
+}
