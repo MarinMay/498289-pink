@@ -1,19 +1,25 @@
 .social__list {
   .list-style-reset ();
-  margin: 0 auto;
+  margin: 0 auto 40px auto;
 }
 
 .social__item {
   display: inline-block;
-  width: 45px;
-  height: 45px;
   font-size: 0;
   vertical-align: middle;
+
 }
 
 .social__link {
+  display: flex;
   width: 45px;
   height: 45px;
+  align-items: center;
+  justify-content: center;
   border: 3px solid @color-main-opacity-10;
   border-radius: 50%;
+}
+
+.social__icon {
+  fill: @color-extra;
 }
