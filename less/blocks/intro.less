@@ -9,3 +9,35 @@
   line-height: 1.2;
   font-weight: 200;
 }
+
+@media (min-width: @tablet-width) {
+  .intro {
+    padding-bottom: 95px;
+  }
+
+  .intro__slogan {
+    margin: 0;
+    padding: 0;
+    font-size: 40px;
+  }
+
+  .intro__slogan:last-of-type {
+    padding: 0 130px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .intro {
+    padding-bottom: 165px;
+  }
+
+  .intro__slogan {
+    margin: 0;
+    padding: 0;
+    font-size: 50px;
+  }
+
+  .intro__slogan:last-of-type {
+    padding: 0 130px;
+  }
+}
