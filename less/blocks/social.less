@@ -1,6 +1,6 @@
 .social__list {
   .list-style-reset ();
-  margin: 0 auto 40px auto;
+  margin-bottom: 40px;
 }
 
 .social__item {
@@ -21,4 +21,10 @@
 
 .social__icon {
   fill: @color-extra;
+}
+
+@media (min-width: @tablet-width) {
+  .social__list {
+    margin: 0;
+  }
 }
