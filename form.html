@@ -7,17 +7,20 @@
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
-    <div class="container">
-      <header class="page-header">
-        <a class="page-header__logo" href="index.html">
-          <img src="img/logo-pink-white-mobile.svg" alt="PINK" width="76" height="24">
-        </a>
+    <header class="page-header">
+      <div class="page-header__wrapper">
+        <div class="page-header__logo-wrapper">
+          <a class="page-header__logo" href="index.html">
+            <img src="img/logo-pink-white-mobile.svg" alt="PINK" width="76" height="24">
+          </a>
+
+          <button class="page-header__toggle" type="button">
+            <span class="visually-hidden">Открыть меню</span>
+            <span class="icon-burger icon-burger--open"></span>
+          </button>
+        </div>
 
         <nav class="main-nav">
-          <button class="main-nav__toggle" type="button">
-            <span class="visually-hidden">Открыть меню</span>
-          </button>
-
           <div class="main-nav__wrapper">
             <ul class="main-nav__list">
               <li class="main-nav__item">
@@ -38,153 +41,155 @@
             </ul>
           </div>
         </nav>
-      </header>
+      </div>
+    </header>
 
-      <main class="page-main">
-        <h1 class="page-main__title">Конкурс на самое безбашенное путешествие с Пинк</h1>
+    <main class="page-main">
+      <h1 class="page-main__title">Конкурс на самое безбашенное путешествие с Пинк</h1>
 
-        <section class="fields">
-          <h2 class="visually-hidden">Поля для заполнения</h2>
+      <section class="fields">
+        <h2 class="visually-hidden">Поля для заполнения</h2>
 
-          <p class="fields__description">
-            Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную   карту! Пожалуйста, заполните
-          </p>
+        <p class="fields__description">
+          Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную   карту! Пожалуйста, заполните
+        </p>
 
-          <form class="form" action="https://echo.htmlacademy.ru" method="POST">
-            <fieldset class="form__full-name full-name">
-              <label class="full-name__field full-name__field--surname">
-                Фамилия:
-                <input type="text" name="surname" placeholder="Укажите вашу фамилию*" required>
-              </label>
+        <form class="form" action="https://echo.htmlacademy.ru" method="POST">
+          <fieldset class="form__full-name full-name">
+            <label class="full-name__field full-name__field--surname">
+              Фамилия:
+              <input type="text" name="surname" placeholder="Укажите вашу фамилию*" required>
+            </label>
 
-              <label class="full-name__field full-name__field--name">
-                Имя:
-                <input type="text" name="name" placeholder="Укажите ваше имя*" required>
-              </label>
+            <label class="full-name__field full-name__field--name">
+              Имя:
+              <input type="text" name="name" placeholder="Укажите ваше имя*" required>
+            </label>
 
-              <label class="full-name__field full-name__field--patronymic">
-                Отчество:
-                <input type="text" name="patronymic" placeholder="Ну и отчество тоже">
-              </label>
-            </fieldset>
+            <label class="full-name__field full-name__field--patronymic">
+              Отчество:
+              <input type="text" name="patronymic" placeholder="Ну и отчество тоже">
+            </label>
+          </fieldset>
 
-            <fieldset class="form__achievements achievements">
-              <p class="form__title">
-                Ваши безбашенные достижения в путешествии
-              </p>
-
-              <ul class="achievements__list">
-                <li class="achievements__item">
-                  <label class="achievements__checkbox">
-                    <input type="checkbox" name="selfie" checked>
-                    Сделал селфи с акулой
-                  </label>
-                </li>
-
-                <li class="achievements__item">
-                  <label class="achievements__checkbox">
-                    <input type="checkbox" name="burnt" checked>
-                    Обгорел на пляже
-                  </label>
-                </li>
-
-                <li class="achievements__item">
-                  <label class="achievements__checkbox">
-                    <input type="checkbox" name="chuck-norris">
-                    Видел Чака Норриса
-                  </label>
-                </li>
-
-                <li class="achievements__item">
-                  <label class="achievements__checkbox">
-                    <input type="checkbox" name="souvenirs">
-                    Накупил сувениров
-                  </label>
-                </li>
-
-                <li class="achievements__item">
-                  <label class="achievements__checkbox">
-                    <input type="checkbox" name="held-tower" checked>
-                    Удержал башню
-                  </label>
-                </li>
-
-                <li class="achievements__item">
-                  <label class="achievements__checkbox">
-                    <input type="checkbox" name="smashed-hotel">
-                    Разгромил отель
-                  </label>
-                </li>
-              </ul>
-            </fieldset>
-
-            <fieldset class="form__user-contacts user-contacts">
-              <label class="user-contacts__item user-contacts__item--phone">
-                Номер телефона
-                <input type="tel" name="phone-number" placeholder="Номер, пожалуйста">
-              </label>
-
-              <label class="user-contacts__item user-contacts__item--email">
-                Адрес почты
-                <input type="email" name="email" placeholder="Введите почту*" required>
-              </label>
-            </fieldset>
-
-            <fieldset class="form__app app">
-              <p class="form__title">С каким приложением путешествовали?</p>
-              <label class="app__item app__item--ios">
-                <input type="radio" name="app" value="iOS" checked>
-                Pink для iOS
-              </label>
-
-              <label class="app__item app__item--android">
-                <input type="radio" name="app" value="Android">
-                Pink на Android
-              </label>
-
-              <label class="app__item app__item--windows">
-                <input type="radio" name="app" value="Windows">
-                Windows Phone
-              </label>
-            </fieldset>
-
-            <fieldset class="form__emotion emotion">
-              <p class="form__title">Опишите свои эмоции</p>
-              <textarea class="emotion__describe" name="describe-emotion" placeholder="Можно прям в   красках, не стесняясь в выражениях"></textarea>
-            </fieldset>
-
-            <button class="form__button button-form" type="submit">Отправить форму</button>
-
-            <p class="form__footnote">
-              <span class="form__star">*</span> &#8212; обязательные поля
+          <fieldset class="form__achievements achievements">
+            <p class="form__title">
+              Ваши безбашенные достижения в путешествии
             </p>
-          </form>
-        </section>
 
-        <section class="pop-up pop-up--sent">
-          <h2 class="pop-up__title">Ваша заявка отправлена</h2>
+            <ul class="achievements__list">
+              <li class="achievements__item">
+                <label class="achievements__checkbox">
+                  <input type="checkbox" name="selfie" checked>
+                  Сделал селфи с акулой
+                </label>
+              </li>
 
-          <p class="pop-up__text">
-            Спасибо за ваше участие, ваша заявка уже поступила к нам. В ближайшее время мы рассмотрим ее   и  оповестим вас.
+              <li class="achievements__item">
+                <label class="achievements__checkbox">
+                  <input type="checkbox" name="burnt" checked>
+                  Обгорел на пляже
+                </label>
+              </li>
+
+              <li class="achievements__item">
+                <label class="achievements__checkbox">
+                  <input type="checkbox" name="chuck-norris">
+                  Видел Чака Норриса
+                </label>
+              </li>
+
+              <li class="achievements__item">
+                <label class="achievements__checkbox">
+                  <input type="checkbox" name="souvenirs">
+                  Накупил сувениров
+                </label>
+              </li>
+
+              <li class="achievements__item">
+                <label class="achievements__checkbox">
+                  <input type="checkbox" name="held-tower" checked>
+                  Удержал башню
+                </label>
+              </li>
+
+              <li class="achievements__item">
+                <label class="achievements__checkbox">
+                  <input type="checkbox" name="smashed-hotel">
+                  Разгромил отель
+                </label>
+              </li>
+            </ul>
+          </fieldset>
+
+          <fieldset class="form__user-contacts user-contacts">
+            <label class="user-contacts__item user-contacts__item--phone">
+              Номер телефона
+              <input type="tel" name="phone-number" placeholder="Номер, пожалуйста">
+            </label>
+
+            <label class="user-contacts__item user-contacts__item--email">
+              Адрес почты
+              <input type="email" name="email" placeholder="Введите почту*" required>
+            </label>
+          </fieldset>
+
+          <fieldset class="form__app app">
+            <p class="form__title">С каким приложением путешествовали?</p>
+            <label class="app__item app__item--ios">
+              <input type="radio" name="app" value="iOS" checked>
+              Pink для iOS
+            </label>
+
+            <label class="app__item app__item--android">
+              <input type="radio" name="app" value="Android">
+              Pink на Android
+            </label>
+
+            <label class="app__item app__item--windows">
+              <input type="radio" name="app" value="Windows">
+              Windows Phone
+            </label>
+          </fieldset>
+
+          <fieldset class="form__emotion emotion">
+            <p class="form__title">Опишите свои эмоции</p>
+            <textarea class="emotion__describe" name="describe-emotion" placeholder="Можно прям в   красках, не стесняясь в выражениях"></textarea>
+          </fieldset>
+
+          <button class="form__button button-form" type="submit">Отправить форму</button>
+
+          <p class="form__footnote">
+            <span class="form__star">*</span> &#8212; обязательные поля
           </p>
+        </form>
+      </section>
 
-          <div class="pop-up__btn-wrapper">
-            <button class="pop-up__close button-form" type="button">Закрыть окно</button>
-          </div>
-        </section>
+      <section class="pop-up pop-up--sent">
+        <h2 class="pop-up__title">Ваша заявка отправлена</h2>
 
-        <section class="pop-up pop-up--error">
-          <h2 class="pop-up__title">Что-то пошло не так</h2>
+        <p class="pop-up__text">
+          Спасибо за ваше участие, ваша заявка уже поступила к нам. В ближайшее время мы рассмотрим ее   и  оповестим вас.
+        </p>
 
-          <p class="pop-up__text">
-            Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить
-          </p>
+        <div class="pop-up__btn-wrapper">
+          <button class="pop-up__close button-form" type="button">Закрыть окно</button>
+        </div>
+      </section>
 
-          <button class="pop-up__close button-form" type="button">ок</button>
-        </section>
-      </main>
+      <section class="pop-up pop-up--error">
+        <h2 class="pop-up__title">Что-то пошло не так</h2>
 
-      <footer class="page-footer">
+        <p class="pop-up__text">
+          Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить
+        </p>
+
+        <button class="pop-up__close button-form" type="button">ок</button>
+      </section>
+    </main>
+
+    <footer class="page-footer">
+      <div class="page-footer__wrapper wrapper">
         <div class="page-footer__logo">
           <span class="visually-hidden">Логотип PINK</span>
         </div>
@@ -232,7 +237,7 @@
             <svg xmlns="http://www.w3.org/2000/svg" width="60px" height="60px" viewBox="0 0 60 60"><path fill="#d22856" d="M30.2 5h-.2l-19.7 2.1v36.2l19.7 11.7 19.7-11.7v-36.2l-19.5-2.1zm17 36.8l-17.2 10.2-17.2-10.2v-14.8l17.1 10.2v1.8l-11.7-7v1.8l11.8 7.1v1.9l-11.8-7v1.8l11.8 7 11.9-7.1v-7.6l5.3-3.2v15.1zm-.1-17l-4.7 2.8-2.2 1.3-10.3-6.1v1.8l8.8 5.3h-.1l-.2.1-1.3.7-7.3-4.3v1.8l5.8 3.4-1.4.9-4.3-2.6v1.8l2.9 1.7-2.9 1.7-17-10.1 17-10.2 17.2 10zm.1-1.8l-17.3-10.2-17.1 10.2v-13.6l17.2-1.8 17.2 1.8v13.6z"/></svg>
           </a>
         </div>
-      </footer>
-    </div><!--end .container-->
+      </div>
+    </footer>
   </body>
 </html>
