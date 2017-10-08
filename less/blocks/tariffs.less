@@ -6,11 +6,11 @@
   .outline ();
 }
 
-.tarrifs__wrapper {
+.tariffs__wrapper {
   overflow: hidden;
 }
 
-.tarrifs__table {
+.tariffs__table {
   width: 100%;
   margin-bottom: 40px;
   border-collapse: collapse;
@@ -18,9 +18,55 @@
   background-color: @color-secondary;
 }
 
-.tarrifs__options {
+.tariffs__options {
   padding: 15px 0 15px 20px;
   text-align: left;
   border: 2px solid @gray;
   border-top: none;
+}
+
+.tariffs__title--hidden {
+  display: none;
+}
+
+.tariffs__options--hidden {
+  display: none;
+}
+
+@media (min-width: @tablet-width) {
+  .tariffs__wrapper {
+    width: 620px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+
+  .tariffs__title--hidden {
+    display: table-cell;
+  }
+
+  .tariffs__options--hidden {
+    display: table-cell;
+  }
+
+  .tariffs__options {
+    padding: 9px 0 9px 16px;
+    text-transform: none;
+  }
+
+  .tariffs__hidden {
+    display: none;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .tariffs__wrapper {
+    width: 940px;
+    margin: 0 auto;
+    padding: 0 10px;
+  }
+
+  .tariffs__options {
+    padding: 15px 0 15px 23px;
+    font-size: 18px;
+  }
 }

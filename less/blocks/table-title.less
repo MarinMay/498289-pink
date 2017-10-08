@@ -20,3 +20,38 @@
   line-height: 30px;
   font-weight: 200;
 }
+
+.table-title--empty {
+  background-color: @gray-light;
+  border: 2px solid @gray-light;
+  border-bottom: 2px solid @gray;
+}
+
+@media (min-width: @tablet-width) {
+  .table-title {
+    width: 153px;
+    padding: 17px 0 10px 0;
+  }
+
+  .table-title__name {
+    font-size: 16px;
+  }
+
+  .table-title__price {
+    font-size: 18px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .table-title {
+    padding: 20px 0;
+  }
+
+  .table-title__name {
+    font-size: 18px;
+  }
+
+  .table-title__price {
+    font-size: 24px;
+  }
+}
