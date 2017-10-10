@@ -1,12 +1,38 @@
-.page-main__title {
-  min-height: 170px;
-  margin: 0 0 50px 0;
-  padding: 35px 45px 0 45px;
-  font-size: 24px;
-  line-height: 1.2;
-  font-weight: 200;
-  color: @color-secondary;
-  background-image: url("../img/bg-back-mobile@1x.jpg");
-  background-repeat: no-repeat;
-  background-position: 50% 20%;
+.page-main__description {
+  box-sizing: border-box;
+  width: 320px;
+  margin: 0 auto 45px auto;
+  padding: 0 20px;
+}
+
+.page-main__description--photo {
+  padding: 0 35px;
+}
+
+.page-main__mobile-hidden {
+  display: none;
+}
+
+@media (min-width: @tablet-width) {
+  .page-main__description {
+    width: 660px;
+    margin-bottom: 70px;
+    padding: 0 85px;
+    font-size: 18px;
+  }
+
+  .page-main__mobile-hidden {
+    display: inline;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .page-main__description {
+    width: 960px;
+    padding: 0 100px;
+  }
+
+  .page-main__description--photo {
+    padding: 0 160px;
+  }
 }

@@ -1,3 +1,70 @@
 .app {
+  position: relative;
+  box-sizing: border-box;
+  width: 320px;
+  margin: 0 auto;
+  padding: 37px 0 0 0;
   font-size: 18px;
+  text-align: left;
+  border: none;
+}
+
+.app::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: ~"calc(-50vw + 50%)";
+  z-index: -1;
+  width: 100vw;
+  height: 100%;
+  background-color: @gray-light;
+}
+
+.app__title {
+  margin-bottom: 45px;
+}
+
+.app__list {
+  .list-style-reset ();
+  padding: 0 20px;
+}
+
+.app__item {
+  margin-bottom: 50px;
+}
+
+
+@media (min-width: @tablet-width) {
+  .app::before {
+    display: none;
+  }
+
+  .app {
+    width: 620px;
+    margin-bottom: 65px;
+    padding: 0;
+    border: 2px solid @gray;
+    background-color: @color-secondary;
+  }
+
+  .app__title {
+    width: 320px;
+    margin: -10px auto 0 auto;
+    padding: 0 24px;
+    background-color: @color-secondary;
+  }
+
+  .app__list {
+    padding: 50px 60px 0 60px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .app {
+    width: 435px;
+    margin: 0;
+    padding: 0;
+    min-height: 300px;
+  }
 }

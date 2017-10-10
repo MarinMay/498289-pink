@@ -4,12 +4,20 @@
   font-weight: 700;
   text-transform: uppercase;
   color: @color-secondary;
-  background-color: @color-main;
+  background-color: @color-main-darken;
+  background-image: url("../img/bg-back-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  background-position: 50% 100%;
+}
+
+.page-header--index {
+  background-position: 50% 49%;
 }
 
 .page-header__wrapper {
   display: flex;
   flex-direction: column;
+  background-color: @color-main;
 }
 
 .page-header__logo-wrapper {
@@ -22,7 +30,6 @@
 
 .page-header__logo {
   display: inline-block;
-  box-sizing: border-box;
   width: 76px;
   vertical-align: middle;
 }
@@ -36,6 +43,10 @@
 }
 
 @media (min-width: @tablet-width) {
+  .page-header--index {
+    background-position: 50% 100%;
+  }
+
   .page-header__logo {
     width: 150px;
     height: 45px;
@@ -49,19 +60,19 @@
 
 @media (min-width: @desktop-width) {
   .page-header {
-    height: 110px;
     line-height: 18px;
     font-weight: 400;
     text-transform: none;
-    background-color: @color-main-opacity-30;
   }
 
   .page-header__wrapper {
     flex-direction: row;
     justify-content: space-between;
     width: 940px;
+    height: 110px;
     margin: 0 auto;
     padding: 0 10px;
+    background-color: @color-main-darken-opacity-30;
   }
 
   .page-header__logo-wrapper{

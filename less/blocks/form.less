@@ -1,43 +1,6 @@
-.form__full-name {
-  margin: 0;
-  padding: 37px 20px 42px 20px;
-  text-align: left;
-  border: none;
-  .outline-pink ();
-}
-
-.form__achievements {
-  margin: 0;
-  padding: 37px 20px 42px 20px;
-  text-align: left;
-  border: none;
-  background-color: @gray-light;
-  .outline-pink ();
-}
-
-.form__user-contacts {
-  margin: 0;
-  padding: 37px 20px 42px 20px;
-  text-align: left;
-  border: none;
-  .outline-pink ();
-}
-
-.form__app {
-  margin: 0;
-  padding: 37px 20px 42px 20px;
-  text-align: left;
-  border: none;
-  background-color: @gray-light;
-  .outline-pink ();
-}
-
-.form__emotion {
-  margin: 0 0 50px 0;
-  padding: 37px 20px 0 20px;
-  text-align: left;
-  border: none;
-  .outline-pink ();
+.form {
+  display: flex;
+  flex-direction: column;
 }
 
 .form__title {
@@ -61,4 +24,114 @@
 
 .form__star {
   color: @color-extra;
+}
+
+.form input {
+  padding: 15px 20px 14px 20px;
+  border: 2px solid @gray;
+}
+
+.form textarea {
+  border: 2px solid @gray;
+}
+
+.form input[placeholder] {
+  font-family: "Open sans", "Arial", sans-serif;
+  font-size: 18px;
+  line-height: 30px;
+  color: @color-main;
+}
+
+.form input::-webkit-input-placeholder {
+  font-family: "Open sans", "Arial", sans-serif;
+  font-size: 18px;
+  line-height: 30px;
+  color: @color-main;
+}
+
+.form input::-moz-placeholder {
+  font-family: "Open sans", "Arial", sans-serif;
+  font-size: 18px;
+  line-height: 30px;
+  opacity: 1;
+  color: @color-main;
+}
+
+.form input:-moz-placeholder {
+  font-family: "Open sans", "Arial", sans-serif;
+  font-size: 18px;
+  line-height: 30px;
+  opacity: 1;
+  color: @color-main;
+}
+
+.form input:-ms-input-placeholder {
+  font-family: "Open sans", "Arial", sans-serif;
+  font-size: 18px;
+  line-height: 30px;
+  color: @color-main;
+}
+
+.form textarea::-webkit-input-placeholder {
+  font-family: "Open sans", "Arial", sans-serif;
+  font-size: 18px;
+  line-height: 30px;
+  color: @color-main;
+}
+
+.form textarea::-moz-placeholder {
+  font-family: "Open sans", "Arial", sans-serif;
+  font-size: 18px;
+  line-height: 30px;
+  color: @color-main;
+}
+
+.form textarea:-moz-placeholder {
+  font-family: "Open sans", "Arial", sans-serif;
+  font-size: 18px;
+  line-height: 30px;
+  color: @color-main;
+}
+
+.form textarea:-ms-input-placeholder {
+  font-family: "Open sans", "Arial", sans-serif;
+  font-size: 18px;
+  line-height: 30px;
+  color: @color-main;
+}
+
+@media (min-width: @tablet-width) {
+  .form__app {
+    order: 1;
+  }
+
+  .form__user-contacts {
+    order: 2;
+  }
+
+  .form__achievements {
+    order: 3;
+  }
+
+  .form__emotion {
+    order: 4;
+  }
+
+  .form__button-wrapper {
+    order: 10;
+  }
+
+  .form__button-wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .form {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
 }
