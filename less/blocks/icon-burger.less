@@ -2,15 +2,15 @@
   display: block;
   width: 50px;
   height: 4px;
-  background-color: @color-secondary;
+  background-color: @bg-color--basic;
 
   &:hover,
   &:focus {
-    background-color: @color-extra;
+    background-color: @menu-color--hover;
   }
 
   &:active {
-    background-color: @color-extra-opacity-30;
+    background-color: @menu-color--mobile--active;
   }
 }
 
@@ -20,15 +20,15 @@
   display: block;
   width: 50px;
   height: 4px;
-  background-color: @color-secondary;
+  background-color: @bg-color--basic;
 
   &:hover,
   &:focus {
-    background-color: @color-extra;
+    background-color: @menu-color--hover;
   }
 
   &:active {
-    background-color: @color-extra-opacity-30;
+    background-color: @menu-color--mobile--active;
   }
 }
 
@@ -68,10 +68,10 @@
 .icon-burger--open::after {
   &:hover,
   &:focus {
-    background-color: @color-extra;
+    background-color: @menu-color--hover;
   }
 
   &:active {
-    background-color: @color-extra-opacity-30;
+    background-color: @menu-color--mobile--active;
   }
 }

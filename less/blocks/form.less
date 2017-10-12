@@ -10,7 +10,7 @@
   line-height: 18px;
   text-align: center;
   text-transform: uppercase;
-  color: @color-extra;
+  color: @font-color--different;
 }
 
 .form__footnote {
@@ -23,84 +23,104 @@
 }
 
 .form__star {
-  color: @color-extra;
+  color: @font-color--different;
 }
 
 .form input {
   padding: 15px 20px 14px 20px;
-  border: 2px solid @gray;
+  font-family: @font-main;
+  font-size: 18px;
+  line-height: 30px;
+  color: @font-color--main;
+  border: 2px solid @border-color;
+
+  &:hover,
+  &:focus {
+    border-color: @border-color--hover;
+  }
+
+  &:active {
+    border-color: @border-color--active;
+  }
 }
 
 .form textarea {
-  border: 2px solid @gray;
-}
+  border: 2px solid @border-color;
 
-.form input[placeholder] {
-  font-family: "Open sans", "Arial", sans-serif;
-  font-size: 18px;
-  line-height: 30px;
-  color: @color-main;
+  &:hover,
+  &:focus {
+    border-color: @border-color--hover;
+  }
+
+  &:active {
+    border-color: @border-color--active;
+  }
 }
 
 .form input::-webkit-input-placeholder {
-  font-family: "Open sans", "Arial", sans-serif;
+  font-family: @font-main;
   font-size: 18px;
   line-height: 30px;
-  color: @color-main;
+  color: @font-color--main;
 }
 
 .form input::-moz-placeholder {
-  font-family: "Open sans", "Arial", sans-serif;
+  font-family: @font-main;
   font-size: 18px;
   line-height: 30px;
   opacity: 1;
-  color: @color-main;
+  color: @font-color--main;
 }
 
 .form input:-moz-placeholder {
-  font-family: "Open sans", "Arial", sans-serif;
+  font-family: @font-main;
   font-size: 18px;
   line-height: 30px;
   opacity: 1;
-  color: @color-main;
+  color: @font-color--main;
 }
 
 .form input:-ms-input-placeholder {
-  font-family: "Open sans", "Arial", sans-serif;
+  font-family: @font-main;
   font-size: 18px;
   line-height: 30px;
-  color: @color-main;
+  color: @font-color--main;
 }
 
 .form textarea::-webkit-input-placeholder {
-  font-family: "Open sans", "Arial", sans-serif;
+  font-family: @font-main;
   font-size: 18px;
   line-height: 30px;
-  color: @color-main;
+  color: @font-color--main;
 }
 
 .form textarea::-moz-placeholder {
-  font-family: "Open sans", "Arial", sans-serif;
+  font-family: @font-main;
   font-size: 18px;
   line-height: 30px;
-  color: @color-main;
+  color: @font-color--main;
 }
 
 .form textarea:-moz-placeholder {
-  font-family: "Open sans", "Arial", sans-serif;
+  font-family: @font-main;
   font-size: 18px;
   line-height: 30px;
-  color: @color-main;
+  color: @font-color--main;
 }
 
 .form textarea:-ms-input-placeholder {
-  font-family: "Open sans", "Arial", sans-serif;
+  font-family: @font-main;
   font-size: 18px;
   line-height: 30px;
-  color: @color-main;
+  color: @font-color--main;
 }
 
 @media (min-width: @tablet-width) {
+  .form__title {
+    position: relative;
+    margin: -10px auto 0 auto;
+  }
+
   .form__app {
     order: 1;
   }

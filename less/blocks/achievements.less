@@ -18,7 +18,7 @@
   z-index: -1;
   width: 100vw;
   height: 100%;
-  background-color: @gray-light;
+  background-color: @bg-color--second;
 }
 
 .achievements__title {
@@ -35,23 +35,22 @@
 }
 
 @media (min-width: @tablet-width) {
-  .achievements::before {
-    display: none;
-  }
-
   .achievements {
     width: 620px;
     margin-bottom: 65px;
     padding: 0;
-    border: 2px solid @gray;
-    background-color: @color-secondary;
+    border: 2px solid @border-color;
+  }
+
+  .achievements::before {
+    display: none;
   }
 
   .achievements__title {
     width: 374px;
-    margin: -10px auto 0 auto;
+    margin-bottom: 0;
     padding: 0 34px;
-    background-color: @color-secondary;
+    background-color: @bg-color--basic;
   }
 
   .achievements__list {

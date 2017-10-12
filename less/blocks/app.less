@@ -18,7 +18,7 @@
   z-index: -1;
   width: 100vw;
   height: 100%;
-  background-color: @gray-light;
+  background-color: @bg-color--second;
 }
 
 .app__title {
@@ -36,23 +36,21 @@
 
 
 @media (min-width: @tablet-width) {
+  .app {
+    width: 620px;
+    padding: 0;
+    border: 2px solid @border-color;
+  }
+
   .app::before {
     display: none;
   }
 
-  .app {
-    width: 620px;
-    margin-bottom: 65px;
-    padding: 0;
-    border: 2px solid @gray;
-    background-color: @color-secondary;
-  }
-
   .app__title {
     width: 320px;
-    margin: -10px auto 0 auto;
+    margin-bottom: 0;
     padding: 0 24px;
-    background-color: @color-secondary;
+    background-color: @bg-color--basic;
   }
 
   .app__list {

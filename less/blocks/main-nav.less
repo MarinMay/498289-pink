@@ -1,27 +1,31 @@
 .main-nav__list {
   .list-style-reset();
-  border-top: 1px solid #000000;
+  border-top: 1px solid @black;
 }
 
 .main-nav__item {
   padding: 16px 0;
-  border-top: 1px solid #485461;
-  border-bottom: 1px solid #000000;
+  border-top: 1px solid @gray--darkest;
+  border-bottom: 1px solid @black;
 }
 
 .main-nav__link {
-  color: @color-secondary;
+  color: @font-color--secondary;
 
   &:hover,
   &:focus {
-    color: @color-extra;
+    color: @menu-color--hover;
+  }
+
+  &:active {
+    color: @menu-color--active;
   }
 }
 
 .main-nav__link--current {
   &:hover,
   &:focus {
-    color: @color-secondary;
+    color: @font-color--secondary;
   }
 }
 

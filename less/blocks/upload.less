@@ -3,7 +3,7 @@
   flex-direction: column;
   margin-bottom: 40px;
   padding: 20px 0 40px 0;
-  background-color: @gray-light;
+  background-color: @bg-color--second;
   .outline ();
 }
 
@@ -22,25 +22,25 @@
 }
 
 .upload__button--post {
-  color: @color-extra;
-  border-color: @color-extra;
+  color: @btn-upload-color;
+  border-color: @btn-upload-color;
 
   &:hover,
   &:focus {
-    color: @color-secondary;
-    background-color: @color-extra;
+    color: @font-color--secondary;
+    background-color: @btn-upload-color;
   }
 
   &:active {
-    color: @color-secondary-opacity-30;
-    background-color: @color-extra;
+    color: @font-color--secondary--opasity-30;
+    background-color: @btn-upload-color;
   }
 }
 
 .upload__button--cancel {
   opacity: 0.1;
-  color: @color-main;
-  border-color: @color-main;
+  color: @btn-cancel-color;
+  border-color: @btn-cancel-color;
 
   &:hover,
   &:focus {
@@ -48,9 +48,8 @@
   }
 
   &:active {
-    opacity: 0.3;
-    color: @color-secondary;
-    background-color: @color-main;
+    color: @font-color--secondary--opasity-30;
+    background-color: @btn-cancel-color;
   }
 }
 

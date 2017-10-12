@@ -8,37 +8,39 @@
   </head>
   <body>
     <header class="page-header page-header--index">
-      <div class="page-header__wrapper">
-        <div class="page-header__logo-wrapper">
-          <a class="page-header__logo">
-            <img src="img/logo-pink-white-mobile.svg" alt="PINK" width="76" height="24"><!--временно-->
-          </a>
+      <div class="page-header__menu">
+        <div class="page-header__inner">
+          <div class="page-header__logo-wrapper">
+            <a class="page-header__logo">
+              <img src="img/logo-pink-white-mobile.svg" alt="PINK" width="76" height="24"><!--временно-->
+            </a>
 
-          <button class="page-header__toggle" type="button">
-            <span class="visually-hidden">Открыть меню</span>
-            <span class="icon-burger icon-burger--open"></span>
-          </button>
+            <button class="page-header__toggle" type="button">
+              <span class="visually-hidden">Открыть меню</span>
+              <span class="icon-burger icon-burger--open"></span>
+            </button>
+          </div>
+
+          <nav class="main-nav">
+            <ul class="main-nav__list">
+              <li class="main-nav__item">
+                <a class="main-nav__link main-nav__link--current">Главная</a>
+              </li>
+
+              <li class="main-nav__item">
+                <a class="main-nav__link" href="photo.html">Фотографии</a>
+              </li>
+
+              <li class="main-nav__item">
+                <a class="main-nav__link" href="form.html">Конкурс</a>
+              </li>
+
+              <li class="main-nav__item">
+                <a class="main-nav__link" href="https://htmlacademy.ru/">HTML Academy</a>
+              </li>
+            </ul>
+          </nav>
         </div>
-
-        <nav class="main-nav">
-          <ul class="main-nav__list">
-            <li class="main-nav__item">
-              <a class="main-nav__link main-nav__link--current">Главная</a>
-            </li>
-
-            <li class="main-nav__item">
-              <a class="main-nav__link" href="photo.html">Фотографии</a>
-            </li>
-
-            <li class="main-nav__item">
-              <a class="main-nav__link" href="form.html">Конкурс</a>
-            </li>
-
-            <li class="main-nav__item">
-              <a class="main-nav__link" href="https://htmlacademy.ru/">HTML Academy</a>
-            </li>
-          </ul>
-        </nav>
       </div>
 
       <section class="download">
@@ -138,10 +140,10 @@
             </h3>
 
             <p class="positive-result__description">
-              Британские ученые провели исследования и доказали, что&nbsp;положительный эффект от использования приложения длится целые&nbsp;сутки!
+              Британские ученые провели исследования и доказали, что&nbsp;положительный эффект от&nbsp;использования приложения длится целые&nbsp;сутки!
             </p>
 
-            <a class="positive-result__link">
+            <a class="positive-result__link" href="#">
               Узнать больше об исследовании
             </a>
           </div>
@@ -287,6 +289,8 @@
 
       <section class="contacts">
         <div class="contacts__wrapper wrapper">
+          <h2 class="visually-hidden">Контакты для связи</h2>
+
           <p class="contacts__text">
             Остались вопросы? Свяжитесь с нами!
           </p>

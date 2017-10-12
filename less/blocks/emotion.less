@@ -12,10 +12,10 @@
   min-height: 200px;
   margin-top: 18px;
   padding: 15px 18px;
-  font-family: "Open sans", "Arial", sans-serif;
+  font-family: @font-main;
   font-size: 18px;
   line-height: 30px;
-  color: @color-main;
+  color: @font-color--main;
 }
 
 @media (min-width: @tablet-width) {
@@ -23,14 +23,13 @@
     width: 620px;
     margin-bottom: 67px;
     padding: 0 58px;
-    border: 2px solid @gray;
+    border: 2px solid @border-color;
   }
 
   .emotion__title {
     width: 186px;
-    margin: -10px auto 0 auto;
     padding: 0 36px;
-    background-color: @color-secondary;
+    background-color: @bg-color--basic;
   }
 
   .emotion__describe {
