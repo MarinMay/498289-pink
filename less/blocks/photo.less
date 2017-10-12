@@ -1,12 +1,18 @@
-.photo {
-  .outline();
+@media (min-width: @tablet-width) {
+  .photo {
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 660px;
+    margin: 0 auto;
+  }
 }
 
-.photo__text {
-  margin: 0;
-  padding: 55px 35px;
-}
-
-.photo__text--end {
-  padding: 48px 30px;
+@media (min-width: @desktop-width) {
+  .photo {
+    width: 960px;
+    margin: 0 auto;
+    padding: 0 10px;
+  }
 }

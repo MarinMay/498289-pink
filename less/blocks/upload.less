@@ -1,6 +1,9 @@
 .upload {
+  display: flex;
+  flex-direction: column;
   margin-bottom: 40px;
-  background-color: @gray-light;
+  padding: 20px 0 40px 0;
+  background-color: @bg-color--second;
   .outline ();
 }
 
@@ -8,35 +11,36 @@
   width: 280px;
   height: 374px;
   margin: 0 auto 42px auto;
-  padding-top: 20px;
+  padding: 0;
   line-height: 0;
 }
 
 .upload__button {
+  display: block;
   margin: 0 auto 12px auto;
   background-color: transparent;
 }
 
 .upload__button--post {
-  color: @color-extra;
-  border-color: @color-extra;
+  color: @btn-upload-color;
+  border-color: @btn-upload-color;
 
   &:hover,
   &:focus {
-    color: @color-secondary;
-    background-color: @color-extra;
+    color: @font-color--secondary;
+    background-color: @btn-upload-color;
   }
 
   &:active {
-    color: @color-secondary-opacity-30;
-    background-color: @color-extra;
+    color: @font-color--secondary--opasity-30;
+    background-color: @btn-upload-color;
   }
 }
 
 .upload__button--cancel {
   opacity: 0.1;
-  color: @color-main;
-  border-color: @color-main;
+  color: @btn-cancel-color;
+  border-color: @btn-cancel-color;
 
   &:hover,
   &:focus {
@@ -44,8 +48,71 @@
   }
 
   &:active {
-    opacity: 0.3;
-    color: @color-secondary;
-    background-color: @color-main;
+    color: @font-color--secondary--opasity-30;
+    background-color: @btn-cancel-color;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .upload {
+    flex-direction: row;
+    justify-content: center;
+    margin: 0;
+    padding: 57px 0 54px 0;
+  }
+
+  .upload__photo {
+    width: 300px;
+    height: 400px;
+    margin: 0 20px 0 0;
+  }
+
+  .upload__control {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-sizing: border-box;
+    width: 300px;
+    padding-left: 25px;
+  }
+
+  .upload__button {
+    width: 254px;
+  }
+
+  .upload__button--post {
+    margin: 0 auto 24px auto;
+  }
+
+  .upload__button--cancel {
+    margin-bottom: 0;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .upload {
+    width: 940px;
+    margin: 0 auto;
+    padding: 57px 10px;
+  }
+
+  .upload__photo {
+    margin-right: 90px;
+  }
+
+  .upload__control {
+    width: 410px;
+    padding-left: 0;
+  }
+
+  .upload__button {
+    display: inline-block;
+    width: 183px;
+    margin: 0;
+  }
+
+  .upload__button-wrapper {
+    display: flex;
+    justify-content: space-between;
   }
 }

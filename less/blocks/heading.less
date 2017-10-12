@@ -1,0 +1,37 @@
+.heading {
+  box-sizing: border-box;
+  min-height: 170px;
+  width: 320px;
+  margin: 0 auto 50px auto;
+  padding: 35px 45px 50px 45px;
+  font-size: 24px;
+  line-height: 28px;
+  font-weight: 200;
+  text-transform: none;
+  color: @font-color--secondary;
+}
+
+.heading__row {
+  display: block;
+  margin: 0;
+  padding: 0;
+}
+
+@media (min-width: @tablet-width) {
+  .heading {
+    width: 660px;
+    min-height: 330px;
+    padding: 75px 83px 80px 93px;
+    margin-bottom: 95px;
+    font-size: 50px;
+    line-height: 60px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .heading {
+    width: 960px;
+    min-height: 285px;
+    padding: 65px 100px 100px 100px;
+  }
+}

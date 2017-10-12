@@ -1,4 +1,110 @@
+.achievements {
+  position: relative;
+  box-sizing: border-box;
+  width: 320px;
+  margin: 0 auto;
+  padding: 37px 0 0 0;
+  font-size: 18px;
+  text-align: left;
+  border: none;
+}
+
+.achievements::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: ~"calc(-50vw + 50%)";
+  z-index: -1;
+  width: 100vw;
+  height: 100%;
+  background-color: @bg-color--second;
+}
+
+.achievements__title {
+  margin-bottom: 40px;
+}
+
 .achievements__list {
   .list-style-reset ();
-  font-size: 18px;
+  padding: 0 20px;
+}
+
+.achievements__item {
+  margin-bottom: 40px;
+}
+
+@media (min-width: @tablet-width) {
+  .achievements {
+    width: 620px;
+    margin-bottom: 65px;
+    padding: 0;
+    border: 2px solid @border-color;
+  }
+
+  .achievements::before {
+    display: none;
+  }
+
+  .achievements__title {
+    width: 374px;
+    margin-bottom: 0;
+    padding: 0 34px;
+    background-color: @bg-color--basic;
+  }
+
+  .achievements__list {
+    padding: 45px 60px 0 60px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .achievements {
+    width: 940px;
+  }
+
+  .achievements__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .achievements__item {
+    flex-shrink: 0;
+  }
+
+  .achievements__item--selfie,
+  .achievements__item--burnt {
+    width: 260px;
+  }
+
+  .achievements__item--chuck-norris,
+  .achievements__item--souvenirs {
+    width: 242px;
+  }
+
+  .achievements__item--tower,
+  .achievements__item--hotel {
+    width: 210px;
+  }
+
+  .achievements__item--chuck-norris {
+    order: 1;
+  }
+
+  .achievements__item--tower {
+    order: 2;
+  }
+
+  .achievements__item--burnt {
+    order: 3;
+  }
+
+  .achievements__item--souvenirs {
+    order: 4;
+  }
+
+  .achievements__item--hotel {
+    order: 5;
+  }
 }

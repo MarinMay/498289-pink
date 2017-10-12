@@ -1,10 +1,10 @@
 .table-title {
   width: 280px;
   padding: 20px 0;
-  color: @color-secondary;
-  background-color: @color-main;
-  border-left: 2px solid @gray;
-  border-right: 2px solid @gray;
+  color: @font-color--secondary;
+  background-color: @bg-color--table-title;
+  border-left: 2px solid @border-color;
+  border-right: 2px solid @border-color;
 }
 
 .table-title__name {
@@ -19,4 +19,39 @@
   font-size: 24px;
   line-height: 30px;
   font-weight: 200;
+}
+
+.table-title--empty {
+  background-color: @bg-color--second;
+  border: 2px solid @bg-color--second;
+  border-bottom: 2px solid @border-color;
+}
+
+@media (min-width: @tablet-width) {
+  .table-title {
+    width: 153px;
+    padding: 17px 0 10px 0;
+  }
+
+  .table-title__name {
+    font-size: 16px;
+  }
+
+  .table-title__price {
+    font-size: 18px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .table-title {
+    padding: 20px 0;
+  }
+
+  .table-title__name {
+    font-size: 18px;
+  }
+
+  .table-title__price {
+    font-size: 24px;
+  }
 }

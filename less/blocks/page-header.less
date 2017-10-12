@@ -2,14 +2,88 @@
   font-size: 18px;
   line-height: 32px;
   font-weight: 700;
-  color: @color-secondary;
-  background-color: @color-main;
+  text-transform: uppercase;
+  color: @font-color--main;
+  background-color: @bg-color--header--dark;
+  background-image: url("../img/bg-back-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  background-position: 50% 100%;
+}
+
+.page-header--index {
+  background-position: 50% 49%;
+}
+
+.page-header__inner {
+  display: flex;
+  flex-direction: column;
+  background-color: @bg-color--header;
+}
+
+.page-header__logo-wrapper {
+  display: flex;
+  justify-content: space-between;
+  box-sizing: border-box;
+  height: 70px;
+  padding: 21px 20px 24px 20px;
 }
 
 .page-header__logo {
   display: inline-block;
   width: 76px;
-  height: 24px;
-  margin: 21px 0 24px 20px;
   vertical-align: middle;
+}
+
+.page-header__toggle {
+  margin: 0;
+  padding: 0;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+@media (min-width: @tablet-width) {
+  .page-header--index {
+    background-position: 50% 100%;
+  }
+
+  .page-header__logo {
+    width: 150px;
+    height: 45px;
+  }
+
+  .page-header__logo-wrapper {
+    height: 110px;
+    padding: 27px 20px 40px 20px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .page-header {
+    line-height: 18px;
+    font-weight: 400;
+    text-transform: none;
+  }
+
+  .page-header__menu {
+    background-color: @bg-color--menu;
+  }
+
+  .page-header__inner {
+    flex-direction: row;
+    justify-content: space-between;
+    width: 940px;
+    height: 110px;
+    margin: 0 auto;
+    padding: 0 10px;
+    background-color: transparent;
+  }
+
+  .page-header__logo-wrapper {
+    padding: 27px 0 40px 0;
+  }
+
+  .page-header__toggle {
+    display: none;
+  }
 }

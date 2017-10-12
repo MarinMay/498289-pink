@@ -3,6 +3,10 @@
   .outline ();
 }
 
+.page-footer--index {
+  display: none;
+}
+
 .page-footer__logo {
   width: 147px;
   height: 41px;
@@ -10,4 +14,31 @@
   background-image: url("../img/logo-pink-blue-mobile.svg");
   background-position: 50% 50%;
   background-repeat: no-repeat;
+}
+
+@media (min-width: @tablet-width) {
+  .page-footer--index {
+    display: block;
+  }
+
+  .page-footer {
+    padding: 0;
+  }
+
+  .page-footer__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 127px;
+  }
+
+  .page-footer__logo {
+    margin: 0;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .page-footer__wrapper {
+    min-height: 197px;
+  }
 }

@@ -1,17 +1,25 @@
 .advantages {
   margin-bottom: 47px;
-  background-color: @gray-light;
+  background-color: @bg-color--second;
+
   .outline ();
 }
 
 .advantages__intro {
   margin-bottom: 55px;
-  background-color: @color-secondary;
+  background-color: @bg-color--basic;
+}
+
+.advantages__wrapper {
+  background-image: url("../img/iphone-screen-mobile@1x.png");
+  background-position: 50% 108%;
+  background-repeat: no-repeat;
 }
 
 .advantages__list {
   .list-style-reset ();
   margin-bottom: 45px;
+  padding-bottom: 320px;
 }
 
 .advantages__item {
@@ -21,6 +29,7 @@
 .advantages__title {
   margin: 35px 0 20px 0;
   padding: 0;
+  font-size: 18px;
 }
 
 .advantages__description {
@@ -28,10 +37,83 @@
   padding: 0;
 }
 
-.advantages__image {
-  line-height: 0;
-  width: 157px;
-  height: 278px;
-  margin: 0 auto;
-  overflow: hidden;
+.advantages__positive-result {
+  display: none;
+}
+
+@media (min-width: @tablet-width) {
+  .advantages {
+    margin-bottom: 60px;
+  }
+
+  .advantages__wrapper {
+    display: flex;
+    justify-content: flex-end;
+    background-image: url("../img/iphone-screen-mobile@1x.png");
+    background-position: 0% 108%;
+    background-repeat: no-repeat;
+  }
+
+  .advantages__list {
+    width: 310px;
+    margin: 0;
+    padding-bottom: 40px;
+    text-align: left;
+  }
+
+  .advantages__image {
+    order: 0;
+  }
+
+  .advantages__item {
+    padding: 0;
+  }
+
+  .advantages__positive-result {
+    display: block;
+    text-align: left;
+    background-color: @bg-color--basic;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .advantages {
+    margin-bottom: 195px;
+  }
+
+  .advantages__wrapper {
+    display: flex;
+    flex-direction: column;
+    background-image: none;
+  }
+
+  .advantages__list {
+    display: flex;
+    order: 0;
+    width: 100%;
+    text-align: center;
+  }
+
+  .advantages__item {
+    width: 290px;
+    padding: 0 32px;
+  }
+
+  .advantages__title {
+    font-size: 30px;
+    line-height: 30px;
+  }
+
+  .advantages__description {
+    font-size: 18px;
+    line-height: 30px;
+  }
+
+  .advantages__positive-result {
+    background-color: @bg-color--second;
+  }
+
+  .advantages__image {
+    display: none;
+  }
 }

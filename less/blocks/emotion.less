@@ -1,7 +1,53 @@
+.emotion {
+  box-sizing: border-box;
+  margin: 0 auto 50px auto;
+  padding: 37px 20px 0 20px;
+  text-align: left;
+  border: none;
+}
 
 .emotion__describe {
   box-sizing: border-box;
-  width: 100%;
+  width: 280px;
+  min-height: 200px;
   margin-top: 18px;
-  padding: 15px 20px;
+  padding: 15px 18px;
+  font-family: @font-main;
+  font-size: 18px;
+  line-height: 30px;
+  color: @font-color--main;
+}
+
+@media (min-width: @tablet-width) {
+  .emotion {
+    width: 620px;
+    margin-bottom: 67px;
+    padding: 0 58px;
+    border: 2px solid @border-color;
+  }
+
+  .emotion__title {
+    width: 186px;
+    padding: 0 36px;
+    background-color: @bg-color--basic;
+  }
+
+  .emotion__describe {
+    width: 500px;
+    min-height: 190px;
+    margin: 26px 0 51px 0;
+    padding: 15px 14px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .emotion {
+    width: 940px;
+  }
+
+  .emotion__describe {
+    width: 820px;
+    min-height: 125px;
+    padding: 15px 20px;
+  }
 }
