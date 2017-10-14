@@ -4,13 +4,14 @@
     flex-direction: column;
     justify-content: flex-end;
     align-items: flex-end;
-    min-height: 305px;
-    padding-bottom: 75px;
+    box-sizing: border-box;
+    min-height: 378px;
+    padding-bottom: 68px;
   }
 
   .positive-result__title {
     width: 210px;
-    margin: 0 0 15px 0;
+    margin: 0 0 10px 0;
     padding: 0 100px 0 0;
     font-size: 30px;
     line-height: 36px;
@@ -27,7 +28,7 @@
   .positive-result__link {
     display: block;
     width: 310px;
-    margin-top: 15px;
+    margin-top: 11px;
     font-size: 14px;
     line-height: 24px;
     text-decoration: underline;
@@ -42,12 +43,13 @@
 
 @media (min-width: @desktop-width) {
   .positive-result__wrapper {
-    padding-bottom: 115px;
+    min-height: 440px;
+    padding-bottom: 114px;
   }
 
   .positive-result__title {
     width: 528px;
-    margin: 0 0 15px 0;
+    margin: 0 45px 24px 0;
     padding: 0;
     font-size: 30px;
     line-height: 30px;
@@ -55,13 +57,14 @@
 
   .positive-result__description {
     width: 528px;
+    margin-right: 45px;
     font-size: 18px;
     line-height: 30px;
   }
 
   .positive-result__link {
     width: 528px;
-    margin-top: 25px;
+    margin: 31px 45px 0 0;
     font-size: 18px;
     line-height: 30px;
   }

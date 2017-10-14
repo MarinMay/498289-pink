@@ -1,13 +1,19 @@
 .tariffs {
-  margin-bottom: 45px;
-  padding-top: 92px;
+  margin-bottom: 43px;
+  padding-top: 90px;
   text-transform: uppercase;
   background-color: @bg-color--second;
   .outline ();
 }
 
 .tariffs__wrapper {
+  display: flex;
+  flex-direction: column-reverse;
   overflow: hidden;
+}
+
+.tariff__toggles {
+  padding-bottom: 47px;
 }
 
 .tariffs__table {
@@ -19,7 +25,8 @@
 }
 
 .tariffs__options {
-  padding: 15px 0 15px 20px;
+  position: relative;
+  padding: 15px 0 14px 21px;
   text-align: left;
   border: 2px solid @border-color;
   border-top: none;
@@ -33,11 +40,47 @@
   display: none;
 }
 
+.tariffs__options--checked::after {
+  content: "";
+  position: absolute;
+  right: 18px;
+  width: 30px;
+  height: 26px;
+  background-image: url("../img/icon-yes.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.tariffs__options--disable::after {
+  content: "";
+  position: absolute;
+  top: 13px;
+  right: 19px;
+  width: 27px;
+  height: 27px;
+  background-image: url("../img/icon-no.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 @media (min-width: @tablet-width) {
+  .tariffs {
+    margin-bottom: 48px;
+    padding-top: 85px;
+  }
+
   .tariffs__wrapper {
     width: 620px;
     margin: 0 auto;
     padding: 0 20px;
+  }
+
+  .tariff__toggles {
+    display: none;
+  }
+
+  .tariffs__table {
+    margin-bottom: 65px;
   }
 
   .tariffs__title--hidden {
@@ -49,24 +92,53 @@
   }
 
   .tariffs__options {
-    padding: 9px 0 9px 16px;
+    padding: 6px 15px 9px 15px;
     text-transform: none;
   }
 
   .tariffs__hidden {
     display: none;
   }
+
+  .tariffs__options--checked::after {
+    top: 8px;
+    right: 62px;
+  }
+
+  .tariffs__options--disable::after {
+    top: 9px;
+    right: 63px;
+  }
 }
 
 @media (min-width: @desktop-width) {
+  .tariffs {
+    padding-top: 148px;
+    margin-bottom: 65px;
+  }
+
   .tariffs__wrapper {
     width: 940px;
     margin: 0 auto;
     padding: 0 10px;
   }
 
+  .tariffs__table {
+    margin-bottom: 95px;
+  }
+
   .tariffs__options {
-    padding: 15px 0 15px 23px;
+    padding: 13px 21px 15px 21px;
     font-size: 18px;
+  }
+
+  .tariffs__options--checked::after {
+    top: 16px;
+    right: 103px;
+  }
+
+  .tariffs__options--disable::after {
+    top: 15px;
+    right: 104px;
   }
 }

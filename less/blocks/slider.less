@@ -1,3 +1,151 @@
 .slider {
   overflow: hidden;
 }
+
+.slider__input {
+  display: none;
+}
+
+.slider__toggles {
+  display: flex;
+  width: 60px;
+  justify-content: space-between;
+  margin: 0 auto;
+}
+
+.slider__list {
+  transition: transform 0.8s;
+}
+
+.slider__toggles label {
+  display: block;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background-color: @slider-toggle-color;
+  cursor: pointer;
+}
+
+.slider__toggles--review label {
+  border: 3px solid @bg-color--basic;
+}
+
+.slider__toggles--tariff label {
+  border: 3px solid @bg-color--second;
+}
+
+.slider__input--review-btn-1:checked ~ .slider__toggles label[for="review-btn-1"],
+.slider__input--review-btn-2:checked ~ .slider__toggles label[for="review-btn-2"],
+.slider__input--review-btn-3:checked ~ .slider__toggles label[for="review-btn-3"] {
+  border: 3px solid @slider-toggle-color--checked;
+}
+
+.slider__input--review-btn-1:hover ~ .slider__toggles label[for="review-btn-1"],
+.slider__input--review-btn-1:focus ~ .slider__toggles label[for="review-btn-1"],
+.slider__input--review-btn-2:hover ~ .slider__toggles label[for="review-btn-2"],
+.slider__input--review-btn-2:focus ~ .slider__toggles label[for="review-btn-2"],
+.slider__input--review-btn-3:hover ~ .slider__toggles label[for="review-btn-3"],
+.slider__input--review-btn-3:focus ~ .slider__toggles label[for="review-btn-3"] {
+  background-color: @slider-toggle-color--hover;
+}
+
+.slider__input--review-btn-1:active ~ .slider__toggles label[for="review-btn-1"],
+.slider__input--review-btn-2:active ~ .slider__toggles label[for="review-btn-2"],
+.slider__input--review-btn-3:active ~ .slider__toggles label[for="review-btn-3"] {
+  background-color: @slider-toggle-color--active;
+}
+
+.slider__input--tariff-btn-1:checked ~ .slider__toggles label[for="tariff-btn-1"],
+.slider__input--tariff-btn-2:checked ~ .slider__toggles label[for="tariff-btn-2"],
+.slider__input--tariff-btn-3:checked ~ .slider__toggles label[for="tariff-btn-3"] {
+  border: 3px solid @slider-toggle-color--checked;
+}
+
+.slider__input--tariff-btn-1:hover ~ .slider__toggles label[for="tariff-btn-1"],
+.slider__input--tariff-btn-1:focus ~ .slider__toggles label[for="tariff-btn-1"],
+.slider__input--tariff-btn-2:hover ~ .slider__toggles label[for="tariff-btn-2"],
+.slider__input--tariff-btn-2:focus ~ .slider__toggles label[for="tariff-btn-2"],
+.slider__input--tariff-btn-3:hover ~ .slider__toggles label[for="tariff-btn-3"],
+.slider__input--tariff-btn-3:focus ~ .slider__toggles label[for="tariff-btn-3"] {
+  background-color: @slider-toggle-color--hover;
+}
+
+.slider__input--tariff-btn-1:active ~ .slider__toggles label[for="tariff-btn-1"],
+.slider__input--tariff-btn-2:active ~ .slider__toggles label[for="tariff-btn-2"],
+.slider__input--tariff-btn-3:active ~ .slider__toggles label[for="tariff-btn-3"] {
+  background-color: @slider-toggle-color--active;
+}
+
+/*слайдер отзывов*/
+.slider__input--review-btn-1:checked ~ .slider__list--reviews {
+  transform: translate(0);
+}
+
+.slider__input--review-btn-2:checked ~ .slider__list--reviews {
+  transform: translate(-320px);
+}
+
+.slider__input--review-btn-3:checked ~ .slider__list--reviews {
+  transform: translate(-640px);
+}
+
+/*слайдер тарифов*/
+.slider__input--tariff-btn-1:checked ~ .slider__list--tariff {
+  transform: translate(0);
+}
+
+.slider__input--tariff-btn-2:checked ~ .slider__list--tariff {
+  transform: translate(-258px);
+}
+
+.slider__input--tariff-btn-3:checked ~ .slider__list--tariff {
+  transform: translate(-516px);
+}
+
+@media (min-width: @tablet-width) {
+  .slider__input--review-btn-1:checked ~ .slider__list--reviews {
+    transform: translate(0);
+  }
+
+  .slider__input--review-btn-2:checked ~ .slider__list--reviews {
+    transform: translate(-660px);
+  }
+
+  .slider__input--review-btn-3:checked ~ .slider__list--reviews {
+    transform: translate(-1320px);
+  }
+
+  .slider__toggles--tariff {
+    display: none;
+  }
+
+  .slider__input--tariff-btn-1:checked ~ .slider__list--tariff {
+    transform: translate(0);
+  }
+
+  .slider__input--tariff-btn-2:checked ~ .slider__list--tariff {
+    transform: translate(0);
+  }
+
+  .slider__input--tariff-btn-3:checked ~ .slider__list--tariff {
+    transform: translate(0);
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .slider__toggles--review {
+    display: none;
+  }
+
+  .slider__input--review-btn-1:checked ~ .slider__list--reviews {
+    transform: translate(0);
+  }
+
+  .slider__input--review-btn-2:checked ~ .slider__list--reviews {
+    transform: translate(0);
+  }
+
+  .slider__input--review-btn-3:checked ~ .slider__list--reviews {
+    transform: translate(0);
+  }
+}

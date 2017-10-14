@@ -22,7 +22,7 @@
 }
 
 .app__title {
-  margin-bottom: 45px;
+  margin-bottom: 40px;
 }
 
 .app__list {
@@ -31,13 +31,58 @@
 }
 
 .app__item {
-  margin-bottom: 50px;
+  margin-bottom: 45px;
 }
 
+.app__label {
+  position: relative;
+  margin-left: 70px;
+}
+
+.app__label::before,
+.app__label::after {
+  content: "";
+  position: absolute;
+  border-radius: 50%;
+}
+
+.app__label::before {
+  top: -7px;
+  left: -70px;
+  width: 35px;
+  height: 35px;
+  background-color: @bg-color--basic;
+  border: 2px solid @border-color;
+}
+
+.app__label::after {
+  top: 5px;
+  left: -58px;
+  width: 15px;
+  height: 15px;
+}
+
+.app__item input[type="radio"] {
+  display: none;
+}
+
+.app__item input[type="radio"]:checked ~ .app__label:after {
+  background-color: @checked-color;
+}
+
+.app__item input[type="radio"]:hover ~ .app__label::before,
+.app__item input[type="radio"]:focus ~ .app__label::before {
+  border-color: @border-color--hover;
+}
+
+.app__item input[type="radio"]:active ~ .app__label::before {
+  border-color: @border-color--active;
+}
 
 @media (min-width: @tablet-width) {
   .app {
     width: 620px;
+    margin-bottom: 65px;
     padding: 0;
     border: 2px solid @border-color;
   }
@@ -54,7 +99,21 @@
   }
 
   .app__list {
-    padding: 50px 60px 0 60px;
+    padding: 50px 60px 13px 57px;
+  }
+
+  .app__label {
+    margin-left: 61px;
+  }
+
+  .app__label::before {
+    top: -8px;
+    left: -60px;
+  }
+
+  .app__label::after {
+    top: 4px;
+    left: -48px;
   }
 }
 
@@ -64,5 +123,25 @@
     margin: 0;
     padding: 0;
     min-height: 300px;
+  }
+
+  .app__list {
+    padding: 53px 60px 16px 74px;
+  }
+
+  .app__item {
+    margin-bottom: 44px;
+  }
+
+  .app__label {
+    margin-left: 59px;
+  }
+
+  .app__label::before {
+    left: -60px;
+  }
+
+  .app__label::after {
+    left: -48px;
   }
 }

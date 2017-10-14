@@ -1,21 +1,17 @@
-.icon-burger {
+.burger__icon {
   display: block;
   width: 50px;
   height: 4px;
   background-color: @bg-color--basic;
-
-  &:hover,
-  &:focus {
-    background-color: @menu-color--hover;
-  }
-
-  &:active {
-    background-color: @menu-color--mobile--active;
-  }
 }
 
-.icon-burger::before,
-.icon-burger::after {
+.burger:hover .burger__icon,
+.burger:focus .burger__icon {
+  background-color: @menu-color--hover;
+}
+
+.burger__icon::before,
+.burger__icon::after {
   content: "";
   display: block;
   width: 50px;
@@ -32,15 +28,15 @@
   }
 }
 
-.icon-burger::before {
+.burger__icon::before {
   transform: translateY(-10px);
 }
 
-.icon-burger::after {
+.burger__icon::after {
   transform: translateY(6px);
 }
 
-.icon-burger--open {
+.burger__icon--open {
   width: 25px;
   background-color: transparent;
 
@@ -54,18 +50,18 @@
   }
 }
 
-.icon-burger--open::before {
+.burger__icon--open::before {
   width: 32px;
   transform: translateY(2px) rotate(45deg);
 }
 
-.icon-burger--open::after {
+.burger__icon--open::after {
   width: 32px;
   transform: translateY(-2px) rotate(-45deg);
 }
 
-.icon-burger--open::before,
-.icon-burger--open::after {
+.burger__icon--open::before,
+.burger__icon--open::after {
   &:hover,
   &:focus {
     background-color: @menu-color--hover;

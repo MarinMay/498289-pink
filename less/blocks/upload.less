@@ -1,8 +1,8 @@
 .upload {
   display: flex;
   flex-direction: column;
-  margin-bottom: 40px;
-  padding: 20px 0 40px 0;
+  margin-bottom: 44px;
+  padding: 20px 0 27px 0;
   background-color: @bg-color--second;
   .outline ();
 }
@@ -10,7 +10,7 @@
 .upload__photo {
   width: 280px;
   height: 374px;
-  margin: 0 auto 42px auto;
+  margin: 0 auto 40px auto;
   padding: 0;
   line-height: 0;
 }
@@ -77,11 +77,12 @@
   }
 
   .upload__button {
-    width: 254px;
+    width: 260px;
+    margin: 0 0 0 2px;
   }
 
   .upload__button--post {
-    margin: 0 auto 24px auto;
+    margin: 0 0 24px 2px;
   }
 
   .upload__button--cancel {
@@ -91,9 +92,11 @@
 
 @media (min-width: @desktop-width) {
   .upload {
+    justify-content: space-between;
+    box-sizing: border-box;
     width: 940px;
     margin: 0 auto;
-    padding: 57px 10px;
+    padding: 53px 60px 57px 80px;
   }
 
   .upload__photo {
