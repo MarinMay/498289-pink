@@ -70,7 +70,10 @@
   background-color: @checked-color;
 }
 
-.app__item input[type="radio"]:hover ~ .app__label::before,
+.app__item input[type="radio"]:hover ~ .app__label::before {
+  border-color: @border-color--hover;
+}
+
 .app__item input[type="radio"]:focus ~ .app__label::before {
   border-color: @border-color--hover;
 }
