@@ -51,6 +51,12 @@
     background-image: url("../img/iphone-screen-mobile@1x.png");
     background-position: 0% 108%;
     background-repeat: no-repeat;
+
+    @media (min-resolution: @retina-dpi),
+      (min-resolution: @retina-dppx) {
+      background-image: url("../img/iphone-screen-mobile@2x.png");
+      background-size: 157px auto;
+    }
   }
 
   .advantages__list {
