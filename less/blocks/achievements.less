@@ -79,7 +79,10 @@
   border-color: @checked-color;
 }
 
-.achievements__item input[type="checkbox"]:hover ~ .achievements__label::before,
+.achievements__item input[type="checkbox"]:hover ~ .achievements__label::before {
+  border-color: @border-color--hover;
+}
+
 .achievements__item input[type="checkbox"]:focus ~ .achievements__label::before {
   border-color: @border-color--hover;
 }
