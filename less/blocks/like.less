@@ -17,3 +17,16 @@
   text-transform: uppercase;
   color: @font-color--different;
 }
+
+@media (min-width: @tablet-width) {
+  .like {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .like__button {
+    margin-right: 0;
+  }
+}

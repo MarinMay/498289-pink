@@ -1,10 +1,24 @@
 .table-title {
-  width: 280px;
-  padding: 20px 0;
+  width: 276px;
+  padding: 15px 0 21px 0;
   color: @font-color--secondary;
   background-color: @bg-color--table-title;
   border-left: 2px solid @border-color;
   border-right: 2px solid @border-color;
+}
+
+.table-title--hit {
+  position: relative;
+  background-image: url("../img/bg-hit.svg");
+  background-repeat: no-repeat;
+}
+
+.table-title__hit {
+  position: absolute;
+  top: 12px;
+  left: 9px;
+  transform: rotate(-45deg);
+  font-weight: 400;
 }
 
 .table-title__name {
@@ -29,8 +43,17 @@
 
 @media (min-width: @tablet-width) {
   .table-title {
-    width: 153px;
-    padding: 17px 0 10px 0;
+    width: 152px;
+    padding: 12px 0 14px 0;
+  }
+
+  .table-title--hit {
+    background-image: url("../img/bg-hit-tablet.svg");
+  }
+
+  .table-title__hit {
+    top: 5px;
+    left: 5px;
   }
 
   .table-title__name {
@@ -39,12 +62,13 @@
 
   .table-title__price {
     font-size: 18px;
+    line-height: 22px;
   }
 }
 
 @media (min-width: @desktop-width) {
   .table-title {
-    padding: 20px 0;
+    padding: 15px 0 25px 0;
   }
 
   .table-title__name {
@@ -52,6 +76,16 @@
   }
 
   .table-title__price {
+    margin-top: 5px;
     font-size: 24px;
+  }
+
+  .table-title__hit {
+    top: 13px;
+    left: 10px;
+  }
+
+  .table-title--hit {
+    background-image: url("../img/bg-hit.svg");
   }
 }

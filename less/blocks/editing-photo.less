@@ -1,14 +1,145 @@
 .editing-photo {
   margin-bottom: 38px;
-  border-bottom: 1px solid rgba(40, 54, 69, 0.1);
+  border-bottom: 1px solid @border-color--editing-photo;
 }
 
 .editing-photo__list {
   .list-style-reset ();
 }
 
+.editing-photo__list--icon {
+  display: flex;
+  justify-content: center;
+
+  .editing-photo__item {
+    box-sizing: border-box;
+    height: 46px;
+    margin-bottom: 20px;
+  }
+}
+
+.editing-photo__list--controls {
+  .editing-photo__item {
+    box-sizing: border-box;
+    height: 56px;
+    padding-top: 20px;
+  }
+}
+
+.editing-photo__item--fill {
+  display: none;
+}
+
+.editing-photo__item--contrast {
+  display: none;
+}
+
+.editing-photo__scale {
+  position: relative;
+  width: 240px;
+  height: 2px;
+  margin: 0 auto;
+  background-color: @scale-color;
+}
+
+.editing-photo__toggle {
+  position: absolute;
+  top: -6px;
+  left: 80%;
+  width: 10px;
+  height: 10px;
+  border: 2px solid @toggle-color;
+  border-radius: 50%;
+  background-color: @bg-color--second;
+  cursor: pointer;
+
+  &:hover,
+  &:focus,
+  &:active {
+    background-color: @toggle-color;
+  }
+}
+
 @media (min-width: @tablet-width) {
   .editing-photo {
+    display: flex;
     margin: 0;
+    border: none;
+  }
+
+  .editing-photo__list--icon {
+    display: block;
+    width: 37px;
+
+    .editing-photo__item {
+      height: 56px;
+      margin-bottom: 15px;
+    }
+  }
+
+  .editing-photo__list--controls {
+    flex-grow: 1;
+
+    .editing-photo__item {
+      margin-bottom: 15px;
+      padding: 20px 18px;
+    }
+  }
+
+  .editing-photo__item {
+    border-bottom: 1px solid @border-color--editing-photo;
+  }
+
+  .editing-photo__item--fill {
+    display: block;
+  }
+
+  .editing-photo__item--contrast {
+    display: block;
+  }
+
+  .editing-photo__scale {
+    width: 100%;
+  }
+
+  .editing-photo__toggle--crop {
+    left: 73%;
+  }
+
+  .editing-photo__toggle--fill {
+    left: 12%;
+  }
+
+  .editing-photo__toggle--contrast {
+    left: 47%;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .editing-photo__list--icon {
+    width: 62px;
+
+    .editing-photo__item {
+      margin-bottom: 16px;
+    }
+  }
+
+  .editing-photo__list--controls {
+    .editing-photo__item {
+      margin-bottom: 16px;
+      padding: 20px 30px;
+    }
+  }
+
+  .editing-photo__toggle--crop {
+    left: 25%;
+  }
+
+  .editing-photo__toggle--fill {
+    left: 86%;
+  }
+
+  .editing-photo__toggle--contrast {
+    left: 56%;
   }
 }

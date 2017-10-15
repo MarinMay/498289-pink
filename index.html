@@ -15,9 +15,9 @@
               <img src="img/logo-pink-white-mobile.svg" alt="PINK" width="76" height="24"><!--временно-->
             </a>
 
-            <button class="page-header__toggle" type="button">
+            <button class="page-header__toggle burger" type="button">
               <span class="visually-hidden">Открыть меню</span>
-              <span class="icon-burger icon-burger--open"></span>
+              <span class="burger__icon burger__icon--open"></span>
             </button>
           </div>
 
@@ -118,12 +118,12 @@
               <h3 class="advantages__title">Меняет мир вокруг</h3>
 
               <p class="advantages__description">
-                Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект
+                Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить&nbsp;эффект
               </p>
             </li>
 
             <li class="advantages__item">
-              <h3 class="advantages__title">Заводит новых друзей</h3>
+              <h3 class="advantages__title">Заводит новых&nbsp;друзей</h3>
 
               <p class="advantages__description">
                 Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых
@@ -140,7 +140,7 @@
             </h3>
 
             <p class="positive-result__description">
-              Британские ученые провели исследования и доказали, что&nbsp;положительный эффект от&nbsp;использования приложения длится целые&nbsp;сутки!
+              Британские ученые провели исследования и&nbsp;доказали, что&nbsp;положительный эффект от&nbsp;использования приложения длится целые&nbsp;сутки!
             </p>
 
             <a class="positive-result__link" href="#">
@@ -150,56 +150,95 @@
         </div>
       </section>
 
-      <section class="reviwes">
-        <div class="reviwes__wrapper slider wrapper">
+      <section class="reviews">
+        <div class="reviews__wrapper slider wrapper">
           <h2 class="visually-hidden">Отзывы о приложении</h2>
-          <div class="reviwes__list slider__list">
-            <blockquote class="reviwes__item slider__item">
-              <b class="reviwes__autor">Николай Петров</b>
 
-              <p class="reviwes__about-autor">25 лет, водитель трамвая</p>
+          <input class="slider__input slider__input--review-btn-1" id="review-btn-1" type="radio" name="review" checked>
+          <input class="slider__input slider__input--review-btn-2" id="review-btn-2" type="radio" name="review">
+          <input class="slider__input slider__input--review-btn-3" id="review-btn-3" type="radio" name="review">
 
-              <p class="reviwes__text">
-                «Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»
+          <div class="reviews__toggles slider__toggles slider__toggles--review">
+            <label for="review-btn-1">
+              <span class="visually-hidden">Первый отзыв</span>
+            </label>
+
+            <label for="review-btn-2">
+              <span class="visually-hidden">Второй отзыв</span>
+            </label>
+
+            <label  for="review-btn-3">
+              <span class="visually-hidden">Третий отзыв</span>
+            </label>
+          </div>
+
+          <div class="reviews__list slider__list slider__list--reviews">
+            <button class="reviews__arrow reviews__arrow--previous" type="button">
+              <span class="visually-hidden">Предыдущий отзыв</span>
+            </button>
+
+            <blockquote class="reviews__item slider__item">
+              <b class="reviews__autor">Николай Петров</b>
+
+              <p class="reviews__about-autor">25 лет, водитель трамвая</p>
+
+              <p class="reviews__text">
+                <span class="reviews__quote">«</span>Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!<span class="reviews__quote">»</span>
               </p>
             </blockquote>
 
-            <blockquote class="reviwes__item slider__item">
-              <b class="reviwes__autor">Николай Петров</b>
+            <blockquote class="reviews__item reviews__item--hide  slider__item">
+              <b class="reviews__autor">Николай Петров</b>
 
-              <p class="reviwes__about-autor">25 лет, водитель трамвая</p>
+              <p class="reviews__about-autor">25 лет, водитель трамвая</p>
 
-              <p class="reviwes__text">
-                «Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»
+              <p class="reviews__text">
+                <span class="reviews__quote">«</span>Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!<span class="reviews__quote">»</span>
               </p>
             </blockquote>
 
-            <blockquote class="reviwes__item slider__item">
-              <b class="reviwes__autor">Николай Петров</b>
+            <blockquote class="reviews__item reviews__item--hide slider__item">
+              <b class="reviews__autor">Николай Петров</b>
 
-              <p class="reviwes__about-autor">25 лет, водитель трамвая</p>
+              <p class="reviews__about-autor">25 лет, водитель трамвая</p>
 
-              <p class="reviwes__text">
-                «Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»
+              <p class="reviews__text">
+                <span class="reviews__quote">«</span>Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!<span class="reviews__quote">»</span>
               </p>
             </blockquote>
-          </div><!--end .reviwes__list-->
 
-          <p class="reviwes__toggles slider__toggles">
-            <button class="slider__toggle" type="button">1</button>
+            <button class="reviews__arrow reviews__arrow--next" type="button">
+              <span class="visually-hidden">Следующий отзыв</span>
+            </button>
+          </div><!--end .reviews__list-->
 
-            <button class="slider__toggle" type="button">2</button>
 
-            <button class="slider__toggle" type="button">3</button>
-          </p>
-        </div><!--end .reviwes__wrapper-->
+        </div><!--end .reviews__wrapper-->
       </section>
 
       <section class="tariffs">
         <div class="tariffs__wrapper slider">
           <h2 class="visually-hidden">Тарифы</h2>
 
-          <table class="tariffs__table">
+          <input class="slider__input slider__input--tariff-btn-1" id="tariff-btn-1" type="radio" name="tariff">
+          <input class="slider__input slider__input--tariff-btn-2" id="tariff-btn-2" type="radio" name="tariff" checked>
+          <input class="slider__input slider__input--tariff-btn-3" id="tariff-btn-3" type="radio" name="tariff">
+
+          <div class="tariff__toggles slider__toggles slider__toggles--tariff">
+            <label for="tariff-btn-1">
+              <span class="visually-hidden">База</span>
+            </label>
+
+            <label for="tariff-btn-2">
+              <span class="visually-hidden">Стандарт</span>
+            </label>
+
+            <label  for="tariff-btn-3">
+              <span class="visually-hidden">Анлим</span>
+            </label>
+          </div>
+
+          <table class="tariffs__table slider__list slider__list--tariff">
             <tr>
               <th class="tariffs__title tariffs__title--hidden table-title table-title--empty"></th>
 
@@ -209,7 +248,7 @@
               </th>
 
               <th class="tariffs__title table-title table-title--hit">
-                <span class="tariffs__hit">Хит</span>
+                <span class="table-title__hit">Хит</span>
                 <b class="table-title__name">Стандарт</b>
                 <p class="table-title__price">3,99 USD</p>
               </th>
@@ -274,16 +313,6 @@
               </td>
             </tr>
           </table>
-
-          <div class="toggles">
-            <p class="slider__toggles">
-            <button class="slider__toggle" type="button">1</button>
-
-            <button class="slider__toggle" type="button">2</button>
-
-            <button class="slider__toggle" type="button">3</button>
-            </p>
-          </div>
         </div>
       </section>
 
@@ -303,7 +332,7 @@
 
             <p class="contacts__info contacts__info--email">
               <span class="contacts__title">Пишите:</span>
-              mail@htmlacademy.ru
+              <a class="contacts__email" href="#">mail@htmlacademy.ru</a>
             </p>
 
             <p class="contacts__info contacts__info--address">
@@ -322,6 +351,7 @@
     <footer class="page-footer page-footer--index">
       <div class="page-footer__wrapper wrapper">
         <div class="page-footer__logo">
+          <a class="page-footer__logo-link"></a>
           <span class="visually-hidden">Логотип PINK</span>
         </div>
 
@@ -362,10 +392,10 @@
         </div>
 
         <div class="page-footer__copyright copyright">
-          Разработано:
+          Разработано
           <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
             <span class="visually-hidden">HTML Academy</span>
-            <svg xmlns="http://www.w3.org/2000/svg" width="60px" height="60px" viewBox="0 0 60 60"><path fill="#d22856" d="M30.2 5h-.2l-19.7 2.1v36.2l19.7 11.7 19.7-11.7v-36.2l-19.5-2.1zm17 36.8l-17.2 10.2-17.2-10.2v-14.8l17.1 10.2v1.8l-11.7-7v1.8l11.8 7.1v1.9l-11.8-7v1.8l11.8 7 11.9-7.1v-7.6l5.3-3.2v15.1zm-.1-17l-4.7 2.8-2.2 1.3-10.3-6.1v1.8l8.8 5.3h-.1l-.2.1-1.3.7-7.3-4.3v1.8l5.8 3.4-1.4.9-4.3-2.6v1.8l2.9 1.7-2.9 1.7-17-10.1 17-10.2 17.2 10zm.1-1.8l-17.3-10.2-17.1 10.2v-13.6l17.2-1.8 17.2 1.8v13.6z"/></svg>
+            <svg xmlns="http://www.w3.org/2000/svg" width="27px" height="34px" viewBox="9 11 41 36"><path fill="#d22856" d="M30.2 5h-.2l-19.7 2.1v36.2l19.7 11.7 19.7-11.7v-36.2l-19.5-2.1zm17 36.8l-17.2 10.2-17.2-10.2v-14.8l17.1 10.2v1.8l-11.7-7v1.8l11.8 7.1v1.9l-11.8-7v1.8l11.8 7 11.9-7.1v-7.6l5.3-3.2v15.1zm-.1-17l-4.7 2.8-2.2 1.3-10.3-6.1v1.8l8.8 5.3h-.1l-.2.1-1.3.7-7.3-4.3v1.8l5.8 3.4-1.4.9-4.3-2.6v1.8l2.9 1.7-2.9 1.7-17-10.1 17-10.2 17.2 10zm.1-1.8l-17.3-10.2-17.1 10.2v-13.6l17.2-1.8 17.2 1.8v13.6z"/></svg>
           </a>
         </div>
       </div>

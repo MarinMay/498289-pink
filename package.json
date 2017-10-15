@@ -4,13 +4,14 @@
   "private": true,
   "description": "Личный проект «Пинк» от HTML Academy",
   "devDependencies": {
+    "@htmlacademy/editorconfig-cli": "1.x",
     "autoprefixer": "7.1.x",
     "grunt": "1.0.x",
     "grunt-browser-sync": "2.2.x",
     "grunt-contrib-less": "1.4.x",
     "grunt-contrib-watch": "1.0.x",
     "grunt-postcss": "0.9.x",
-    "@htmlacademy/editorconfig-cli": "1.x",
+    "pixel-glass": "^1.0.13",
     "stylelint": "8.1.x",
     "stylelint-config-htmlacademy": "0.1.x"
   },

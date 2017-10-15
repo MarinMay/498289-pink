@@ -10,10 +10,28 @@
 .page-footer__logo {
   width: 147px;
   height: 41px;
-  margin: 0 auto 40px auto;
+  margin: 0 auto 34px auto;
+  .outline ();
+}
+
+.page-footer__logo-link {
+  display: block;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
   background-image: url("../img/logo-pink-blue-mobile.svg");
   background-position: 50% 50%;
   background-repeat: no-repeat;
+}
+
+.page-footer__social {
+  margin: 0 auto;
+  .outline-pink ();
+}
+
+.page-footer__copyright {
+  .outline ();
 }
 
 @media (min-width: @tablet-width) {
@@ -27,18 +45,41 @@
 
   .page-footer__wrapper {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     min-height: 127px;
   }
 
   .page-footer__logo {
+    margin: 0 70px 0 0;
+  }
+
+  .page-footer__social {
     margin: 0;
+  }
+
+  .page-footer__copyright {
+    margin-left: 94px;
   }
 }
 
 @media (min-width: @desktop-width) {
   .page-footer__wrapper {
+    align-items: flex-start;
+    justify-content: space-between;
     min-height: 197px;
+    padding-top: 75px;
+  }
+
+  .page-footer__logo {
+    margin: 0;
+  }
+
+  .page-footer__social {
+    margin: 0;
+  }
+
+  .page-footer__copyright {
+    margin: 8px 0 0 0;
   }
 }

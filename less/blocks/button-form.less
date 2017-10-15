@@ -21,4 +21,15 @@
     background-color: @btn-form-color--hover;
     border-color: @btn-form-color--hover;
   }
+
+  &:disabled {
+    background-color: @btn-form-color--disabled;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .button-form {
+    width: 300px;
+    min-height: 60px;
+  }
 }

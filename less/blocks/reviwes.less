@@ -1,65 +1,71 @@
-.reviwes {
-  .outline ();
+.reviews__wrapper {
+  display: flex;
+  flex-direction: column-reverse;
 }
 
-.reviwes__list {
+.reviews__toggles {
+  padding-bottom: 43px;
+}
+
+.reviews__list {
   display: flex;
   width: 960px;
 }
 
-.reviwes__item {
+.reviews__arrow {
+  display: none;
+}
+
+.reviews__item {
   display: flex;
   flex-direction: column;
   flex-shrink: 0;
   width: 280px;
   margin: 0;
-  padding: 0 20px;
+  padding: 0 20px 33px 20px;
 }
 
-.reviwes__autor {
-  margin: 0 0 25px 0;
+.reviews__autor {
+  margin: 0 0 13px 0;
   font-size: 18px;
   font-weight: 700;
 }
 
-.reviwes__text {
+.reviews__text {
   margin: 0;
-  padding: 0 0 40px 0;
+  padding: 0;
 }
 
-.reviews__toggles {
-  margin: 0;
-  padding-bottom: 40px;
-}
-
-.reviwes__about-autor {
+.reviews__about-autor {
   display: none;
 }
 
 @media (min-width: @tablet-width) {
-  .reviwes__list {
+  .reviews__list {
     width: 1980px;
+    margin-bottom: 34px;
   }
 
-  .reviwes__item {
+  .reviews__item {
     width: 620px;
-    margin-right: 20px;
+    margin-right: 40px;
     padding: 0;
   }
 
-  .reviwes__text {
+  .reviews__text {
+    margin-bottom: 35px;
     font-size: 18px;
     line-height: 30px;
   }
 
-  .reviwes__autor {
+  .reviews__autor {
     order: 1;
-    margin-bottom: 10px;
+    margin-bottom: 3px;
     font-size: 20px;
     line-height: 30px;
   }
 
-  .reviwes__about-autor {
+  .reviews__about-autor {
     order: 1;
     display: block;
     margin: 0;
@@ -67,26 +73,90 @@
     font-size: 14px;
     line-height: 30px;
   }
+
+  .reviews__toggles {
+    padding-bottom: 22px;
+  }
 }
 
 @media (min-width: @desktop-width) {
-  .reviwes__list {
-    width: 2880px;
+  .reviews__arrow {
+    display: block;
+    position: relative;
+    width: 46px;
+    height: 130px;
+    padding: 0;
+    background-color: @bg-color--basic;
+    border: none;
+    cursor: pointer;
   }
 
-  .reviwes__item {
-    box-sizing: border-box;
+  .reviews__arrow--previous::before {
+    content: "";
+    position: absolute;
+    top: 31px;
+    left: 6px;
+    width: 30px;
+    height: 30px;
+    border: 2px solid @slider-toggle-color;
+    border-radius: 3px;
+    border-bottom: none;
+    border-right: none;
+    transform: rotate(-45deg);
+  }
+
+  .reviews__arrow--next::before {
+    content: "";
+    position: absolute;
+    top: 31px;
+    left: 6px;
+    width: 30px;
+    height: 30px;
+    border: 2px solid @slider-toggle-color;
+    border-radius: 3px;
+    border-bottom: none;
+    border-left: none;
+    transform: rotate(45deg);
+  }
+
+  .reviews__arrow--previous:hover::before,
+  .reviews__arrow--next:hover::before,
+  .reviews__arrow--previous:focus::before,
+  .reviews__arrow--next:focus::before {
+    border-color: @slider-toggle-color--hover;
+  }
+
+  .reviews__arrow--previous:active::before,
+  .reviews__arrow--next:active::before {
+    border-color: @slider-toggle-color--active;
+  }
+
+  .reviews__list {
     width: 940px;
-    margin-right: 10px;
-    padding: 0 125px;
+    margin-bottom: 40px;
   }
 
-  .reviwes__autor {
+  .reviews__item {
+    box-sizing: border-box;
+    width: 690px;
+    margin: 0 auto;
+    padding: 0;
+  }
+
+  .reviews__item--hide {
+    display: none;
+  }
+
+  .reviews__quote {
+    display: none;
+  }
+
+  .reviews__autor {
     font-size: 24px;
     line-height: 30px;
   }
 
-  .reviwes__about-autor {
+  .reviews__about-autor {
     font-size: 18px;
     line-height: 30px;
   }
