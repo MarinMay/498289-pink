@@ -62,6 +62,12 @@
   background-image: url("../img/bg-map-mobile@1x.png");
   background-repeat: no-repeat;
   background-position: 50% 100%;
+
+  @media (min-resolution: @retina-dpi),
+    (min-resolution: @retina-dppx) {
+    background-image: url("../img/bg-map-mobile@2x.jpg");
+    background-size: 320px auto;
+  }
 }
 
 @media (min-width: @tablet-width) {
@@ -98,6 +104,14 @@
 
   .contacts__map {
     height: 354px;
+    background-image: url("../img/bg-map-tablet@1x.jpg");
+    background-position: 50% 50%;
+
+    @media (min-resolution: @retina-dpi),
+      (min-resolution: @retina-dppx) {
+      background-image: url("../img/bg-map-tablet@2x.jpg");
+      background-size: 700px auto;
+    }
   }
 }
 
@@ -131,5 +145,13 @@
 
   .contacts__map {
     height: 480px;
+    background-image: url("../img/bg-map-desktop@1x.jpg");
+    background-position: 50% 0;
+
+    @media (min-resolution: @retina-dpi),
+      (min-resolution: @retina-dppx) {
+      background-image: url("../img/bg-map-desktop@2x.jpg");
+      background-size: 1200px auto;
+    }
   }
 }
