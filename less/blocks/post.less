@@ -25,6 +25,7 @@
 }
 
 .post--panorama {
+  position: relative;
   width: 320px;
   background-color: @bg-color--basic;
 
@@ -36,12 +37,34 @@
     left: ~"calc(-50vw + 50%)";
   }
 
+  img {
+    width: 100%;
+    height: auto;
+  }
+
   .post__description {
     background-color: @bg-color--second;
   }
 
   .post__text {
     margin: 0 0 11px 0;
+  }
+
+  &::before {
+    content: "Панорама дня";
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 50%;
+    width: 140px;
+    height: 36px;
+    font-size: 12px;
+    line-height: 36px;
+    font-weight: 700;
+    text-align: center;
+    text-transform: uppercase;
+    color: @font-color--secondary;
+    background-color: @bg-color-panorama-badge;
   }
 }
 
@@ -123,6 +146,12 @@
     .post__text {
       order: 2;
     }
+
+    &::before {
+      top: 57px;
+      left: auto;
+      right: 20px;
+    }
   }
 
   .post__text {
@@ -158,6 +187,11 @@
       width: 940px;
       min-height: 93px;
       padding: 25px 32px 10px 27px;
+    }
+
+    &::before {
+      top: 54px;
+      right: 10px;
     }
   }
 }

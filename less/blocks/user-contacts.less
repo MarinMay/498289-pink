@@ -36,6 +36,7 @@
   }
 
   .user-contacts__item {
+    position: relative;
     margin: 37px 0 0 0;
   }
 
@@ -60,6 +61,28 @@
   .user-contacts__caption {
     order: 1;
     padding-left: 19px;
+  }
+
+  .user-contacts__item::after {
+    content: "";
+    position: absolute;
+    top: 2px;
+    right: 2px;
+    width: 60px;
+    height: 59px;
+    background-color: @gray;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+  }
+
+  .user-contacts__item--phone::after {
+    background-image: url("../img/icon-phone.svg");
+    background-size: 20px 19px;
+  }
+
+  .user-contacts__item--email::after {
+    background-image: url("../img/icon-mail.svg");
+    background-size: 18px 13px;
   }
 }
 
