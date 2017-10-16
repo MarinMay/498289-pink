@@ -1,17 +1,22 @@
-ymaps.ready(function () {
-  var myMap = new ymaps.Map('map', {
+var myMap;
+
+ymaps.ready(init);
+
+function init () {
+  myMap = new ymaps.Map('map', {
     center: [59.938649906262164,30.323049135581975],
     zoom: 17,
-    controls: ['zoomControls'],
+    controls: [],
     behaviors: ['drag']
   }),
 
-  myPlacemark = new ymaps.Placemark(myMap.getCenter(),([59.938649906262164,30.323049135581975], {}, {
-    iconLayout: 'default#image',
-    iconImageHref: '../img/icon-map-marker.svg',
-    iconImageSize: [36, 36]
-  });
+  myMap.controls.add(
+    new ymaps.control.ZoomControl()
+  );
 
-  myMap.geoObjects
-    .add(myPlacemark);
-});
+  var myPlacemark = new  ymaps.Placemark([59.938649906262164,30.323049135581975]);
+
+  myMap.geoObjects.add(myPlacemark),
+  myMap.controls.add('ZoomControl');
+
+}
