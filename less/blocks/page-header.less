@@ -40,6 +40,27 @@
   vertical-align: middle;
 }
 
+.page-header__logo svg {
+  fill: @menu-logo-color;
+}
+
+.page-header__logo[href]:hover svg,
+.page-header__logo[href]:focus svg {
+  fill: @menu-color--hover;
+}
+
+.page-header__logo[href]:active svg {
+  fill: @menu-color--active;
+}
+
+.page-header__icon-desktop {
+  display: none;
+}
+
+.page-header__icon-tabet {
+  display: none;
+}
+
 .page-header__toggle {
   margin: 0;
   padding: 0;
@@ -64,14 +85,22 @@
     background-position: 50% 100%;
   }
 
+  .page-header__logo-wrapper {
+    height: 110px;
+    padding: 27px 20px 40px 20px;
+  }
+
   .page-header__logo {
     width: 150px;
     height: 45px;
   }
 
-  .page-header__logo-wrapper {
-    height: 110px;
-    padding: 27px 20px 40px 20px;
+  .page-header__icon-mobile {
+    display: none;
+  }
+
+  .page-header__icon-tabet {
+    display: inline;
   }
 }
 
@@ -110,6 +139,14 @@
 
   .page-header__logo-wrapper {
     padding: 27px 0 40px 0;
+  }
+
+  .page-header__icon-desktop {
+    display: inline;
+  }
+
+  .page-header__icon-tabet {
+    display: none;
   }
 
   .page-header__toggle {
