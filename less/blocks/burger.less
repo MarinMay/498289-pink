@@ -1,0 +1,77 @@
+/*гамбургер при закрытом меню*/
+.burger__icon {
+  display: block;
+  width: 50px;
+  height: 4px;
+  background-color: @bg-color--basic;
+}
+
+.burger__icon::before,
+.burger__icon::after {
+  content: "";
+  display: block;
+  width: 50px;
+  height: 4px;
+  background-color: @bg-color--basic;
+}
+
+.burger__icon::before {
+  transform: translateY(-10px);
+}
+
+.burger__icon::after {
+  transform: translateY(6px);
+}
+
+.burger:hover .burger__icon,
+.burger:focus .burger__icon {
+  background-color: @menu-color--hover;
+
+  &::before,
+  &::after {
+    background-color: @menu-color--hover;
+  }
+}
+
+.burger:active .burger__icon {
+  background-color: @menu-color--mobile--active;
+
+  &::before,
+  &::after {
+    background-color: @menu-color--mobile--active;
+  }
+}
+
+/*крестик при открытом меню*/
+.burger__icon--open {
+  width: 25px;
+  background-color: transparent;
+}
+
+.burger__icon--open::before {
+  width: 32px;
+  transform: translateY(2px) rotate(45deg);
+}
+
+.burger__icon--open::after {
+  width: 32px;
+  transform: translateY(-2px) rotate(-45deg);
+}
+
+.burger:hover .burger__icon--open,
+.burger:focus .burger__icon--open,
+.burger:active .burger__icon--open {
+  background-color: transparent;
+}
+
+.burger:hover .burger__icon--open::before,
+.burger:hover .burger__icon--open::after,
+.burger:focus .burger__icon--open::before,
+.burger:focus .burger__icon--open::after {
+  background-color: @menu-color--hover;
+}
+
+.burger:active .burger__icon--open::before,
+.burger:active .burger__icon--open::after {
+  background-color: @menu-color--mobile--active;
+}
