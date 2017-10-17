@@ -12,10 +12,51 @@
   justify-content: center;
 
   .editing-photo__item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     box-sizing: border-box;
     height: 46px;
     margin-bottom: 20px;
   }
+}
+
+.editing-photo__button {
+  box-sizing: border-box;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+
+  &--crop {
+    width: 48px;
+    height: 48px;
+    margin-right: 34px;
+  }
+
+  &--fill {
+    width: 48px;
+    height: 48px;
+    margin-right: 40px;
+  }
+
+  &--contrast {
+    width: 32px;
+    height: 32px;
+  }
+}
+
+.editing-photo__button svg {
+  fill: @btn-editing-photo;
+}
+
+.editing-photo__button--active svg {
+  fill: @btn-editing-photo--active;
+}
+
+.editing-photo__button:hover svg,
+.editing-photo__button:focus svg {
+  fill: @btn-editing-photo--hover;
 }
 
 .editing-photo__list--controls {
@@ -72,9 +113,33 @@
     width: 37px;
 
     .editing-photo__item {
+      align-items: flex-start;
       height: 56px;
       margin-bottom: 15px;
     }
+  }
+
+  .editing-photo__button {
+    padding-top: 7px;
+  }
+
+  .editing-photo__button svg {
+    fill: @btn-editing-photo--active;
+  }
+
+  .editing-photo__button--crop,
+  .editing-photo__button--fill,
+  .editing-photo__button--crop svg,
+  .editing-photo__button--fill svg {
+    width: 24px;
+    height: 24px;
+    margin-right: 0;
+  }
+
+  .editing-photo__button--contrast,
+  .editing-photo__button--contrast svg {
+    width: 16px;
+    height: 16px;
   }
 
   .editing-photo__list--controls {
@@ -120,8 +185,32 @@
     width: 62px;
 
     .editing-photo__item {
+      justify-content: flex-start;
       margin-bottom: 16px;
     }
+  }
+
+  .editing-photo__button {
+    padding-top: 0;
+  }
+
+  .editing-photo__button--contrast {
+    padding: 3px 0 0 6px;
+  }
+
+  .editing-photo__button--crop,
+  .editing-photo__button--fill,
+  .editing-photo__button--crop svg,
+  .editing-photo__button--fill svg {
+    width: 48px;
+    height: 48px;
+    margin-right: 0;
+  }
+
+  .editing-photo__button--contrast,
+  .editing-photo__button--contrast svg {
+    width: 32px;
+    height: 32px;
   }
 
   .editing-photo__list--controls {

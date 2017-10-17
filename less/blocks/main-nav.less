@@ -31,6 +31,16 @@
   }
 }
 
+.main-nav__link--current::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 2px;
+  background-color: @bg-color--basic;
+}
+
 @media (min-width: @desktop-width) {
   .main-nav__list {
     display: flex;
@@ -51,15 +61,5 @@
 
   .main-nav__link {
     padding: 16px 0;
-  }
-
-  .main-nav__link--current::after {
-    content: "";
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    height: 2px;
-    background-color: @bg-color--basic;
   }
 }

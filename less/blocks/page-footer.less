@@ -18,9 +18,23 @@
   height: 100%;
   margin: 0;
   padding: 0;
-  background-image: url("../img/logo-pink-blue-mobile.svg");
-  background-position: 50% 50%;
-  background-repeat: no-repeat;
+}
+
+.page-footer__logo-link svg {
+  fill: @footer-logo-color;
+}
+
+.page-footer__icon-desktop {
+  display: none;
+}
+
+.page-footer__logo-link[href]:hover svg,
+  .page-footer__logo-link[href]:focus svg {
+  fill: @footer-logo-color--hover;
+}
+
+.page-footer__logo-link[href]:active svg {
+  opacity: 0.3;
 }
 
 .page-footer__social {
@@ -66,6 +80,14 @@
 
   .page-footer__logo {
     margin: 0;
+  }
+
+  .page-footer__icon-desktop {
+    display: inline;
+  }
+
+  .page-footer__icon-mobile {
+    display: none;
   }
 
   .page-footer__social {

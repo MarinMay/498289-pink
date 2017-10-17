@@ -9,8 +9,20 @@
   width: 27px;
   height: 34px;
   margin-left: 11px;
+
+  &:hover .copyright__icon,
+  &:focus .copyright__icon {
+    fill: @blue;
+  }
+
+  &:active .copyright__icon {
+    fill: @blue--opacity-10;
+  }
 }
 
+.copyright__icon {
+  fill: @pink;
+}
 
 @media (min-width: @desktop-width) {
   .copyright {
