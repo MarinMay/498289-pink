@@ -1,6 +1,32 @@
 <!DOCTYPE html>
 <html lang="ru">
   <head>
+         <!-- Pixel Glass -->
+<style>
+  HTML {
+    background-repeat: no-repeat;
+    background-position:  50% 0;
+    /* По умолчанию показывается мобильный макет */
+    background-image: url( "img/pink-photo-mobile.jpg" );
+  }
+  /* Планшет */
+  @media ( min-width: 660px ) {
+    HTML {
+      /* Планшетный макет */
+      background-image: url( "img/pink-photo-tablet.jpg" );
+    }
+  }
+  /* Десктоп */
+  @media ( min-width: 960px ) {
+    HTML {
+      /* Десктопный макет */
+      background-image: url( "img/pink-photo-desktop.jpg" );
+    }
+  }
+</style>
+<link href="../node_modules/pixel-glass/styles.css" rel="stylesheet">
+<script src="../node_modules/pixel-glass/script.js"></script>
+<!-- // Pixel Glass -->
     <meta charset="utf-8">
     <title>HTML Academy: Пинк. Фотографии</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
@@ -31,26 +57,24 @@
             </button>
           </div>
 
-          <nav class="main-nav">
-            <div class="main-nav__wrapper">
-              <ul class="main-nav__list">
-                <li class="main-nav__item">
-                  <a class="main-nav__link" href="index.html">Главная</a>
-                </li>
+        <nav class="main-nav">
+            <ul class="main-nav__list">
+              <li class="main-nav__item">
+                <a class="main-nav__link" href="index.html">Главная</a>
+              </li>
 
-                <li class="main-nav__item">
-                  <a class="main-nav__link main-nav__link--current">Фотографии</a>
-                </li>
+              <li class="main-nav__item">
+                <a class="main-nav__link main-nav__link--current">Фотографии</a>
+              </li>
 
-                <li class="main-nav__item">
-                  <a class="main-nav__link" href="form.html">Конкурс</a>
-                </li>
+              <li class="main-nav__item">
+                <a class="main-nav__link" href="form.html">Конкурс</a>
+              </li>
 
-                <li class="main-nav__item">
-                  <a class="main-nav__link" href="https://htmlacademy.ru/">HTML Academy</a>
-                </li>
-              </ul>
-            </div>
+              <li class="main-nav__item">
+                <a class="main-nav__link" href="https://htmlacademy.ru/">HTML Academy</a>
+              </li>
+            </ul>
           </nav>
         </div>
       </div>
@@ -66,10 +90,18 @@
           Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?
         </p>
 
-      <section class="photo">
+      <div class="photo">
         <article class="post post--panorama">
+          <h2 class="visually-hidden">Пост пользователя</h2>
+
           <a class="post__image"  href="#">
             <picture>
+              <source type="image/webp" media="(min-width: 960px)" srcset="img/panorama-desktop@1x.webp 1x, img/panorama-desktop@2x.webp 2x">
+
+              <source type="image/webp" media="(min-width: 660px)" srcset="img/panorama-tablet@1x.webp 1x, img/panorama-tablet@2x.webp 2x">
+
+              <source type="image/webp" srcset="img/panorama-mobile@1x.webp 1x, img/panorama-mobile@2x.webp 2x">
+
               <source media="(min-width: 960px)" srcset="img/panorama-desktop@1x.jpg 1x, img/panorama-desktop@2x.jpg 2x">
 
               <source media="(min-width: 660px)" srcset="img/panorama-tablet@1x.jpg 1x, img/panorama-tablet@2x.jpg 2x">
@@ -87,6 +119,8 @@
 
             <div class="post__like like">
               <button class="like__button" type="button">
+                <span class="visually-hidden">Поставить лайк</span>
+
                 <svg width="13" height="12">
                   <use xlink:href="img/sprite.svg#heart"></use>
                 </svg>
@@ -97,8 +131,16 @@
         </article>
 
         <article class="post">
+          <h2 class="visually-hidden">Пост пользователя</h2>
+
           <a class="post__image"  href="#">
             <picture>
+              <source type="image/webp" media="(min-width: 960px)" srcset="img/photo-car-desktop@1x.webp 1x, img/photo-car-desktop@2x.webp 2x">
+
+              <source type="image/webp" media="(min-width: 660px)" srcset="img/photo-car-tablet@1x.webp 1x, img/photo-car-tablet@2x.webp 2x">
+
+              <source type="image/webp" srcset="img/photo-car-mobile@1x.webp 1x, img/photo-car-mobile@2x.webp 2x" >
+
               <source media="(min-width: 960px)" srcset="img/photo-car-desktop@1x.jpg 1x, img/photo-car-desktop@2x.jpg 2x">
 
               <source media="(min-width: 660px)" srcset="img/photo-car-tablet@1x.jpg 1x, img/photo-car-tablet@2x.jpg 2x">
@@ -116,6 +158,8 @@
 
             <div class="post__like like">
               <button class="like__button" type="button">
+                <span class="visually-hidden">Поставить лайк</span>
+
                 <svg width="13" height="12">
                   <use xlink:href="img/sprite.svg#heart"></use>
                 </svg>
@@ -126,8 +170,16 @@
         </article>
 
         <article class="post">
+          <h2 class="visually-hidden">Пост пользователя</h2>
+
           <a class="post__image" href="#">
             <picture>
+              <source type="image/webp" media="(min-width: 960px)" srcset="img/photo-drumset-desktop@1x.webp 1x, img/photo-drumset-desktop@2x.webp 2x">
+
+              <source type="image/webp" media="(min-width: 660px)" srcset="img/photo-drumset-tablet@1x.webp 1x, img/photo-drumset-tablet@2x.webp 2x">
+
+              <source type="image/webp" srcset="img/photo-drumset-mobile@1x.webp 1x, img/photo-drumset-mobile@2x.webp 2x">
+
               <source media="(min-width: 960px)" srcset="img/photo-drumset-desktop@1x.jpg 1x, img/photo-drumset-desktop@2x.jpg 2x">
 
               <source media="(min-width: 660px)" srcset="img/photo-drumset-tablet@1x.jpg 1x, img/photo-drumset-tablet@2x.jpg 2x">
@@ -145,6 +197,8 @@
 
             <div class="post__like like">
               <button class="like__button" type="button">
+                <span class="visually-hidden">Поставить лайк</span>
+
                 <svg width="13" height="12">
                   <use xlink:href="img/sprite.svg#heart"></use>
                 </svg>
@@ -155,8 +209,16 @@
         </article>
 
         <article class="post">
+          <h2 class="visually-hidden">Пост пользователя</h2>
+
           <a class="post__image"  href="#">
             <picture>
+              <source type="image/webp" media="(min-width: 960px)" srcset="img/photo-window-desktop@1x.webp 1x, img/photo-window-desktop@2x.webp 2x">
+
+              <source type="image/webp" media="(min-width: 660px)" srcset="img/photo-window-tablet@1x.webp 1x, img/photo-window-tablet@2x.webp 2x">
+
+              <source type="image/webp" srcset="img/photo-window-mobile@1x.webp 1x, img/photo-window-mobile@2x.webp 2x">
+
               <source media="(min-width: 960px)" srcset="img/photo-window-desktop@1x.jpg 1x, img/photo-window-desktop@2x.jpg 2x">
 
               <source media="(min-width: 660px)" srcset="img/photo-window-tablet@1x.jpg 1x, img/photo-window-tablet@2x.jpg 2x">
@@ -174,6 +236,8 @@
 
             <div class="post__like like">
               <button class="like__button" type="button">
+                <span class="visually-hidden">Поставить лайк</span>
+
                 <svg width="13" height="12">
                   <use xlink:href="img/sprite.svg#heart"></use>
                 </svg>
@@ -184,8 +248,16 @@
         </article>
 
         <article class="post">
+          <h2 class="visually-hidden">Пост пользователя</h2>
+
           <a class="post__image"  href="#">
             <picture>
+              <source type="image/webp" media="(min-width: 960px)" srcset="img/photo-fair-desktop@1x.webp 1x, img/photo-fair-desktop@2x.webp 2x">
+
+              <source type="image/webp" media="(min-width: 660px)" srcset="img/photo-fair-tablet@1x.webp 1x, img/photo-fair-tablet@2x.webp 2x">
+
+              <source type="image/webp" srcset="img/photo-fair-mobile@1x.webp 1x, img/photo-fair-mobile@2x.webp 2x" alt="Фото Сергея">
+
               <source media="(min-width: 960px)" srcset="img/photo-fair-desktop@1x.jpg 1x, img/photo-fair-desktop@2x.jpg 2x">
 
               <source media="(min-width: 660px)" srcset="img/photo-fair-tablet@1x.jpg 1x, img/photo-fair-tablet@2x.jpg 2x">
@@ -203,6 +275,8 @@
 
             <div class="post__like like">
               <button class="like__button" type="button">
+                <span class="visually-hidden">Поставить лайк</span>
+
                 <svg width="13" height="12">
                   <use xlink:href="img/sprite.svg#heart"></use>
                 </svg>
@@ -213,8 +287,16 @@
         </article>
 
         <article class="post">
+          <h2 class="visually-hidden">Пост пользователя</h2>
+
           <a class="post__image"  href="#">
             <picture>
+              <source type="image/webp" media="(min-width: 960px)" srcset="img/photo-pov-desktop@1x.webp 1x, img/photo-pov-desktop@2x.webp 2x">
+
+              <source type="image/webp" media="(min-width: 660px)" srcset="img/photo-pov-tablet@1x.webp 1x, img/photo-pov-tablet@2x.webp 2x">
+
+              <source type="image/webp" srcset="img/photo-pov-mobile@1x.webp 1x, img/photo-pov-mobile@2x.webp 2x">
+
               <source media="(min-width: 960px)" srcset="img/photo-pov-desktop@1x.jpg 1x, img/photo-pov-desktop@2x.jpg 2x">
 
               <source media="(min-width: 660px)" srcset="img/photo-pov-tablet@1x.jpg 1x, img/photo-pov-tablet@2x.jpg 2x">
@@ -232,6 +314,8 @@
 
             <div class="post__like like">
               <button class="like__button" type="button">
+                <span class="visually-hidden">Поставить лайк</span>
+
                 <svg width="13" height="12">
                   <use xlink:href="img/sprite.svg#heart"></use>
                 </svg>
@@ -242,13 +326,22 @@
         </article>
 
         <article class="post">
+          <h2 class="visually-hidden">Пост пользователя</h2>
+
           <a class="post__image"  href="#">
             <picture>
+              <source type="image/webp" media="(min-width: 960px)" srcset="img/photo-wing-desktop@1x.webp 1x, img/photo-wing-desktop@2x.webp 2x">
+
+              <source type="image/webp" media="(min-width: 660px)" srcset="img/photo-wing-tablet@1x.webp 1x, img/photo-wing-tablet@2x.webp 2x">
+
+              <source type="image/webp" srcset="img/photo-wing-mobile@1x.webp 1x, img/photo-wing-mobile@2x.webp 2x">
+
               <source media="(min-width: 960px)" srcset="img/photo-wing-desktop@1x.jpg 1x, img/photo-wing-desktop@2x.jpg 2x">
 
               <source media="(min-width: 660px)" srcset="img/photo-wing-tablet@1x.jpg 1x, img/photo-wing-tablet@2x.jpg 2x">
 
               <img src="img/photo-wing-mobile@1x.jpg" srcset="img/photo-wing-mobile@1x.jpg 1x, img/photo-wing-mobile@2x.jpg 2x" alt="Фотография Надежды" >
+            </picture>
           </a>
 
           <div class="post__description">
@@ -260,6 +353,8 @@
 
             <div class="post__like like">
               <button class="like__button" type="button">
+                <span class="visually-hidden">Поставить лайк</span>
+
                 <svg width="13" height="12">
                   <use xlink:href="img/sprite.svg#heart"></use>
                 </svg>
@@ -268,7 +363,7 @@
             </div>
           </div>
         </article>
-      </section>
+      </div>
 
       <p class="page-main__description page-main__description--end">
         Затмите их всех!
@@ -280,6 +375,12 @@
 
         <div class="upload__photo">
           <picture>
+            <source type="image/webp" media="(min-width: 960px)" srcset="img/photo-road-desktop@1x.webp 1x, img/photo-road-desktop@2x.webp 2x">
+
+            <source type="image/webp" media="(min-width: 660px)" srcset="img/photo-road-tablet@1x.webp 1x, img/photo-road-tablet@2x.webp 2x">
+
+            <source type="image/webp" srcset="img/photo-road-mobile@1x.webp 1x, img/photo-road-mobile@2x.webp 2x" alt="Выгружаемая фотография">
+
             <source media="(min-width: 960px)" srcset="img/photo-road-desktop@1x.jpg 1x, img/photo-road-desktop@2x.jpg 2x">
 
             <source media="(min-width: 660px)" srcset="img/photo-road-tablet@1x.jpg 1x, img/photo-road-tablet@2x.jpg 2x">
@@ -313,7 +414,7 @@
 
               <li class="editing-photo__item">
                 <button class="editing-photo__button editing-photo__button--contrast" type="button">
-                  <svg width="31.92" height="31.92">
+                  <svg width="32" height="32">
                     <use xlink:href="img/sprite.svg#contrast"></use>
                   </svg>
 
@@ -323,7 +424,7 @@
             </ul>
 
             <ul class="editing-photo__list editing-photo__list--controls">
-              <li class="editing-photo__item editing-photo__item--scale">
+              <li class="editing-photo__item editing-photo__item--crop">
                 <div class="editing-photo__scale">
                   <div class="editing-photo__toggle editing-photo__toggle--crop"></div>
                 </div>
@@ -409,6 +510,9 @@
         </div>
       </div>
     </footer>
+
+    <script src="js/svg4everybody.js"></script>
+    <script>svg4everybody(); // run it now or whenever you are ready</script>
 
     <script src="js/picturefill.js"></script>
   </body>

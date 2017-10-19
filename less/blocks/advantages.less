@@ -11,7 +11,7 @@
   position: relative;
 }
 
-.advantages__wrapper::before {
+.advantages__list::before {
   content: "";
   display: block;
   position: absolute;
@@ -42,7 +42,6 @@
     background-size: 157px auto;
   }
 }
-
 
 .advantages__list {
   .list-style-reset ();
@@ -133,6 +132,8 @@
   .advantages__wrapper {
     display: flex;
     flex-direction: column;
+    align-items: flex-end;
+    min-height: 600px;
     background-image: none;
   }
 
@@ -148,7 +149,7 @@
     box-sizing: border-box;
     width: 100%;
     padding: 0 31px 39px 31px;
-    min-height: 600px;
+    min-height: 590px;
     text-align: center;
   }
 

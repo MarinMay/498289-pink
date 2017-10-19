@@ -1,6 +1,32 @@
 <!DOCTYPE html>
 <html lang="ru">
   <head>
+        <!-- Pixel Glass -->
+<style>
+  HTML {
+    background-repeat: no-repeat;
+    background-position:  50% 0;
+    /* По умолчанию показывается мобильный макет */
+    background-image: url( "img/pink-form-mobile.jpg" );
+  }
+  /* Планшет */
+  @media ( min-width: 660px ) {
+    HTML {
+      /* Планшетный макет */
+      background-image: url( "img/pink-form-tablet.jpg" );
+    }
+  }
+  /* Десктоп */
+  @media ( min-width: 960px ) {
+    HTML {
+      /* Десктопный макет */
+      background-image: url( "img/pink-form-desktop.jpg" );
+    }
+  }
+</style>
+<link href="../node_modules/pixel-glass/styles.css" rel="stylesheet">
+<script src="../node_modules/pixel-glass/script.js"></script>
+<!-- // Pixel Glass -->
     <meta charset="utf-8">
     <title>HTML Academy: Пинк. Конкурс</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
@@ -32,25 +58,23 @@
           </div>
 
           <nav class="main-nav">
-            <div class="main-nav__wrapper">
-              <ul class="main-nav__list">
-                <li class="main-nav__item">
-                  <a class="main-nav__link" href="index.html">Главная</a>
-                </li>
+            <ul class="main-nav__list">
+              <li class="main-nav__item">
+                <a class="main-nav__link" href="index.html">Главная</a>
+              </li>
 
-                <li class="main-nav__item">
-                  <a class="main-nav__link" href="photo.html">Фотографии</a>
-                </li>
+              <li class="main-nav__item">
+                <a class="main-nav__link" href="photo.html">Фотографии</a>
+              </li>
 
-                <li class="main-nav__item">
-                  <a class="main-nav__link main-nav__link--current">Конкурс</a>
-                </li>
+              <li class="main-nav__item">
+                <a class="main-nav__link main-nav__link--current">Конкурс</a>
+              </li>
 
-                <li class="main-nav__item">
-                  <a class="main-nav__link" href="https://htmlacademy.ru/">HTML Academy</a>
-                </li>
-              </ul>
-            </div>
+              <li class="main-nav__item">
+                <a class="main-nav__link" href="https://htmlacademy.ru/">HTML Academy</a>
+              </li>
+            </ul>
           </nav>
         </div>
       </div>
@@ -301,6 +325,9 @@
         </div>
       </div>
     </footer>
+
+    <script src="js/svg4everybody.js"></script>
+    <script>svg4everybody(); // run it now or whenever you are ready</script>
 
     <script src="js/picturefill.js"></script>
   </body>

@@ -1,6 +1,32 @@
 <!DOCTYPE html>
 <html lang="ru">
   <head>
+     <!-- Pixel Glass -->
+<style>
+  HTML {
+    background-repeat: no-repeat;
+    background-position:  50% 0;
+    /* По умолчанию показывается мобильный макет */
+    background-image: url( "img/pink-index-mobile.jpg" );
+  }
+  /* Планшет */
+  @media ( min-width: 660px ) {
+    HTML {
+      /* Планшетный макет */
+      background-image: url( "img/pink-index-tablet.jpg" );
+    }
+  }
+  /* Десктоп */
+  @media ( min-width: 960px ) {
+    HTML {
+      /* Десктопный макет */
+      background-image: url( "img/pink-index-desktop.jpg" );
+    }
+  }
+</style>
+<link href="../node_modules/pixel-glass/styles.css" rel="stylesheet">
+<script src="../node_modules/pixel-glass/script.js"></script>
+<!-- // Pixel Glass -->
     <meta charset="utf-8">
     <title>HTML Academy: Пинк</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
@@ -53,6 +79,9 @@
         </div>
       </div>
 
+
+      <h1 class="visually-hidden">Приложение для избавления от серости</h1>
+
       <section class="download">
         <div class="download__wrapper wrapper">
           <h2 class="visually-hidden">Ссылки на скачивание приложения</h2>
@@ -103,8 +132,6 @@
     </header>
 
     <main class="page-main">
-      <h1 class="visually-hidden">Приложение для избавления от серости</h1>
-
       <section class="advantages">
         <h2 class="visually-hidden">Преимущества приложения PINK</h2>
 
@@ -227,8 +254,6 @@
               <span class="visually-hidden">Следующий отзыв</span>
             </button>
           </div><!--end .reviews__list-->
-
-
         </div><!--end .reviews__wrapper-->
       </section>
 
@@ -240,7 +265,7 @@
           <input class="slider__input slider__input--tariff-btn-2" id="tariff-btn-2" type="radio" name="tariff" checked>
           <input class="slider__input slider__input--tariff-btn-3" id="tariff-btn-3" type="radio" name="tariff">
 
-          <div class="tariff__toggles slider__toggles slider__toggles--tariff">
+          <div class="tariffs__toggles slider__toggles slider__toggles--tariff">
             <label for="tariff-btn-1">
               <span class="visually-hidden">База</span>
             </label>
@@ -422,6 +447,9 @@
         </div>
       </div>
     </footer>
+
+    <script src="js/svg4everybody.js"></script>
+    <script>svg4everybody(); // run it now or whenever you are ready</script>
 
     <script src="js/picturefill.js"></script>
 
