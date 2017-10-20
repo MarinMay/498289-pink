@@ -1,53 +1,31 @@
 <!DOCTYPE html>
 <html lang="ru">
   <head>
-        <!-- Pixel Glass -->
-<style>
-  HTML {
-    background-repeat: no-repeat;
-    background-position:  50% 0;
-    /* По умолчанию показывается мобильный макет */
-    background-image: url( "img/pink-form-mobile.jpg" );
-  }
-  /* Планшет */
-  @media ( min-width: 660px ) {
-    HTML {
-      /* Планшетный макет */
-      background-image: url( "img/pink-form-tablet.jpg" );
-    }
-  }
-  /* Десктоп */
-  @media ( min-width: 960px ) {
-    HTML {
-      /* Десктопный макет */
-      background-image: url( "img/pink-form-desktop.jpg" );
-    }
-  }
-</style>
-<link href="../node_modules/pixel-glass/styles.css" rel="stylesheet">
-<script src="../node_modules/pixel-glass/script.js"></script>
-<!-- // Pixel Glass -->
     <meta charset="utf-8">
     <title>HTML Academy: Пинк. Конкурс</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <link href="css/style.css" rel="stylesheet">
+    <link href="css/style.min.css" rel="stylesheet">
   </head>
   <body>
+    <div style="display:none">
+      <include src="build/img/sprite.svg"></include>
+    </div>
+
     <header class="page-header">
       <div class="page-header__menu">
         <div class="page-header__inner">
           <div class="page-header__logo-wrapper">
             <a class="page-header__logo" href="index.html">
               <svg class="page-header__icon-desktop" width="146.3" height="40.375">
-                <use xlink:href="img/sprite.svg#logo-header-desktop"></use>
+                <use xlink:href="#logo-header-desktop"></use>
               </svg>
 
               <svg class="page-header__icon-tabet" width="146.3" height="40.375">
-                <use xlink:href="img/sprite.svg#logo-header-tablet"></use>
+                <use xlink:href="#logo-header-tablet"></use>
               </svg>
 
               <svg class="page-header__icon-mobile" width="74.426" height="22.859">
-                <use xlink:href="img/sprite.svg#logo-header-mobile"></use>
+                <use xlink:href="#logo-header-mobile"></use>
               </svg>
             </a>
 
@@ -272,11 +250,11 @@
         <div class="page-footer__logo">
           <a class="page-footer__logo-link" href="index.html">
             <svg class="page-footer__icon-desktop" width="146.3" height="40.375">
-              <use xlink:href="img/sprite.svg#logo-footer-desktop"></use>
+              <use xlink:href="#logo-footer-desktop"></use>
             </svg>
 
             <svg class="page-footer__icon-mobile" width="146.3" height="40.375">
-              <use xlink:href="img/sprite.svg#logo-footer-mobile"></use>
+              <use xlink:href="#logo-footer-mobile"></use>
             </svg>
 
             <span class="visually-hidden">Логотип PINK</span>
@@ -289,7 +267,7 @@
               <a class="social__link social__link--twitter" href="#">
                 <span class="visually-hidden">Twitter</span>
                 <svg class="social__icon" width="17.5" height="14.663">
-                  <use xlink:href="img/sprite.svg#twitter"></use>
+                  <use xlink:href="#twitter"></use>
                 </svg>
               </a>
             </li>
@@ -298,7 +276,7 @@
               <a class="social__link social__link--facebook" href="#">
                 <span class="visually-hidden">Facebook</span>
                 <svg class="social__icon" width="8.673" height="18.944">
-                  <use xlink:href="img/sprite.svg#facebook"></use>
+                  <use xlink:href="#facebook"></use>
                 </svg>
               </a>
             </li>
@@ -307,7 +285,7 @@
               <a class="social__link social__link--youtube" href="#">
                 <span class="visually-hidden">Youtube</span>
                 <svg class="social__icon" width="14.64px" height="13.96px">
-                  <use xlink:href="img/sprite.svg#youtube"></use>
+                  <use xlink:href="#youtube"></use>
                 </svg>
               </a>
             </li>
@@ -319,15 +297,12 @@
           <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
             <span class="visually-hidden">HTML Academy</span>
             <svg class="copyright__icon" width="27" height="34">
-              <use xlink:href="img/sprite.svg#logo-htmlacademy"></use>
+              <use xlink:href="#logo-htmlacademy"></use>
             </svg>
           </a>
         </div>
       </div>
     </footer>
-
-    <script src="js/svg4everybody.js"></script>
-    <script>svg4everybody(); // run it now or whenever you are ready</script>
 
     <script src="js/picturefill.js"></script>
   </body>
