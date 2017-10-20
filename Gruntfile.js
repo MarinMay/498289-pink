@@ -23,14 +23,15 @@ module.exports = function(grunt) {
       }
     },
 
-    csso: {
-      style: {
-        options: {
-          report: "gzip"
-        },
-        files: {
-          "build/css/style.min.css": ["build/css/style.css"]
-        }
+    cssmin: {
+      target: {
+        files: [{
+          expand: true,
+          cwd: "build/css",
+          src: ["*.css", "!*.min.css"],
+          dest: "build/css",
+          ext: ".min.css"
+        }]
       }
     },
 
@@ -97,7 +98,7 @@ module.exports = function(grunt) {
       },
       style: {
         files: ["less/**/*.less"],
-        tasks: ["less", "postcss", "csso"]
+        tasks: ["less", "postcss", "cssmin"]
       }
     },
 
@@ -127,7 +128,7 @@ module.exports = function(grunt) {
     "copy",
     "less",
     "postcss",
-    "csso",
+    "cssmin",
     "posthtml"
   ]);
 };

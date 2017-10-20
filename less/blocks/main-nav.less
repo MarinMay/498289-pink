@@ -1,3 +1,7 @@
+.main-nav--hide {
+  display: none;
+}
+
 .main-nav__list {
   .list-style-reset();
   border-top: 1px solid @black;
@@ -42,6 +46,11 @@
 }
 
 @media (min-width: @desktop-width) {
+  //на десктопной версии меню всегда открыто
+  .main-nav--hide {
+    display: block;
+  }
+
   .main-nav {
     display: flex;
     flex-direction: column;

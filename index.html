@@ -11,9 +11,9 @@
       <include src="build/img/sprite.svg"></include>
     </div>
 
-    <header class="page-header page-header--index">
+    <header class="page-header page-header--index"><!--page-header--index-menu-close(двигает позицию фоновой картинки при закрытом меню)-->
       <div class="page-header__menu">
-        <div class="page-header__inner">
+        <div class="page-header__inner"><!--page-header__inner--transparent(Добавляет прозрачность при закрытом меню)-->
           <div class="page-header__logo-wrapper">
             <a class="page-header__logo">
               <svg class="page-header__icon-desktop" width="146.3" height="40.375">
@@ -29,13 +29,13 @@
               </svg>
             </a>
 
-            <button class="page-header__toggle burger" type="button">
+            <button class="page-header__toggle page-header__toggle--hide burger" type="button"> <!--page-header__toggle--hide(прячет крестик при не работающем js)-->
               <span class="visually-hidden">Открыть меню</span>
-              <span class="burger__icon burger__icon--open"></span>
+              <span class="burger__icon"></span><!--burger__icon--open(превращает иконку бургера в крестик при открытом меню-->
             </button>
           </div>
 
-          <nav class="main-nav">
+          <nav class="main-nav"><!--main-nav--hide(прячет меню-->
             <ul class="main-nav__list">
               <li class="main-nav__item">
                 <a class="main-nav__link main-nav__link--current">Главная</a>
