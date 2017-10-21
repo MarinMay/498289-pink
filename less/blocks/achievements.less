@@ -91,6 +91,16 @@
   border-color: @border-color--active;
 }
 
+.achievements__item input[type="checkbox"]:checked:disabled ~ .achievements__label:after,
+.achievements__item input[type="checkbox"]:checked:disabled ~ .achievements__label {
+  opacity: 0.5;
+}
+
+.achievements__item input[type="checkbox"]:disabled ~ .achievements__label:after,
+.achievements__item input[type="checkbox"]:disabled ~ .achievements__label {
+  opacity: 0.5;
+}
+
 @media (min-width: @tablet-width) {
   .achievements {
     width: 620px;
