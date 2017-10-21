@@ -21,8 +21,12 @@
 }
 
 //сдвигает фоновую картинку при закрытом меню
-.page-header--index-menu-close {
+.page-header--index-menu-closed {
   background-position: 50% 0;
+}
+
+.page-header--menu-closed {
+  background-position: center 0;
 }
 
 .page-header__inner {
@@ -72,8 +76,11 @@
 }
 
 .page-header__toggle {
-  margin: 0;
-  padding: 10px 2px 0 0;
+  position: relative;
+  width: 53px;
+  height: 30px;
+  margin: -2px 0 0 0;
+  padding: 0;
   background-color: transparent;
   border: none;
   cursor: pointer;
@@ -97,6 +104,10 @@
 
   .page-header--index {
     background-position: 50% 100%;
+  }
+
+  .page-header--menu-closed {
+    background-position: center 0;
   }
 
   .page-header__logo-wrapper {

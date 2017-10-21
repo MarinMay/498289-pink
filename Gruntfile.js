@@ -64,6 +64,18 @@ module.exports = function(grunt) {
       }
     },
 
+    cwebp: {
+      images: {
+        options: {
+          q: 90
+        },
+        files: [{
+          expand: true,
+          src: ["img/**/*.jpg"]
+        }]
+      }
+    },
+
     svgstore: {
       options: {
         includeTitleElement: false
