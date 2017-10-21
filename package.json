@@ -15,6 +15,7 @@
     "grunt-contrib-imagemin": "^2.0.1",
     "grunt-contrib-less": "1.4.x",
     "grunt-contrib-watch": "1.0.x",
+    "grunt-cwebp": "^2.1.0",
     "grunt-juwain-posthtml": "^0.6.0",
     "grunt-postcss": "0.9.x",
     "grunt-svgstore": "^1.0.0",

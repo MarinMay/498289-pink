@@ -59,7 +59,19 @@ module.exports = function(grunt) {
         },
         files: [{
           expand: true,
-          src: ["build/img/**/*.{png,jpg,svg}"]
+          src: ["img/**/*.{png,jpg}"]
+        }]
+      }
+    },
+
+    cwebp: {
+      images: {
+        options: {
+          q: 90
+        },
+        files: [{
+          expand: true,
+          src: ["img/**/*.jpg"]
         }]
       }
     },
