@@ -22,10 +22,25 @@
 
 .copyright__icon {
   fill: @pink;
+  pointer-events: none;
+}
+
+@media (min-width: @tablet-width) {
+  .copyright {
+    line-height: 28px;
+  }
+
+  .copyright__link {
+    margin-left: 15px;
+  }
 }
 
 @media (min-width: @desktop-width) {
   .copyright {
     font-size: 18px;
+  }
+
+  .copyright__link {
+    margin-left: 13px;
   }
 }

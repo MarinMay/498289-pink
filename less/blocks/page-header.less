@@ -17,13 +17,23 @@
 }
 
 .page-header--index {
-  background-position: 50% 49%;
+  background-position: 50% 258px;
+}
+
+//сдвигает фоновую картинку при закрытом меню
+.page-header--index-menu-close {
+  background-position: 50% 0;
 }
 
 .page-header__inner {
   display: flex;
   flex-direction: column;
   background-color: @bg-color--header;
+}
+
+//при закрытом меню блок с логотипом с прозрачностью
+.page-header__inner--transparent {
+  background-color: @bg-color--menu;
 }
 
 .page-header__logo-wrapper {
@@ -63,10 +73,14 @@
 
 .page-header__toggle {
   margin: 0;
-  padding: 0;
+  padding: 10px 2px 0 0;
   background-color: transparent;
   border: none;
   cursor: pointer;
+}
+
+.page-header__toggle--hide {
+  display: none;
 }
 
 @media (min-width: @tablet-width) {
@@ -131,7 +145,7 @@
     flex-direction: row;
     justify-content: space-between;
     width: 940px;
-    height: 110px;
+    min-height: 110px;
     margin: 0 auto;
     padding: 0 10px;
     background-color: transparent;

@@ -6,20 +6,31 @@
   "devDependencies": {
     "@htmlacademy/editorconfig-cli": "1.x",
     "autoprefixer": "7.1.x",
-    "grunt": "1.0.x",
+    "eslint": "^4.9.0",
+    "grunt": "^1.0.1",
     "grunt-browser-sync": "2.2.x",
+    "grunt-contrib-clean": "^1.1.0",
+    "grunt-contrib-copy": "^1.0.0",
+    "grunt-contrib-cssmin": "^2.2.1",
+    "grunt-contrib-imagemin": "^2.0.1",
     "grunt-contrib-less": "1.4.x",
     "grunt-contrib-watch": "1.0.x",
+    "grunt-juwain-posthtml": "^0.6.0",
     "grunt-postcss": "0.9.x",
+    "grunt-svgstore": "^1.0.0",
+    "js-linter": "0.0.10",
+    "load-grunt-tasks": "^3.5.2",
     "pixel-glass": "^1.0.13",
+    "posthtml-include": "^1.1.0",
     "stylelint": "8.1.x",
     "stylelint-config-htmlacademy": "0.1.x"
   },
   "scripts": {
     "editorconfig": "editorconfig-cli",
     "stylelint": "stylelint 'less/**/*.less' --syntax less",
+    "lint": "js-linter ./",
     "test": "npm run editorconfig && npm run stylelint",
-    "build": "grunt less && grunt postcss",
+    "build": "grunt build",
     "start": "npm run build && grunt serve"
   },
   "browserslist": [
@@ -37,5 +48,6 @@
   ],
   "engines": {
     "node": "8.2"
-  }
+  },
+  "dependencies": {}
 }

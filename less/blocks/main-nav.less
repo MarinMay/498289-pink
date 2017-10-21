@@ -1,3 +1,7 @@
+.main-nav--hide {
+  display: none;
+}
+
 .main-nav__list {
   .list-style-reset();
   border-top: 1px solid @black;
@@ -42,24 +46,46 @@
 }
 
 @media (min-width: @desktop-width) {
+  //на десктопной версии меню всегда открыто
+  .main-nav--hide {
+    display: block;
+  }
+
+  .main-nav {
+    display: flex;
+    flex-direction: column;
+  }
+
   .main-nav__list {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    flex-wrap: wrap;
     align-items: center;
     box-sizing: border-box;
     width: 790px;
-    height: 110px;
+    min-height: 110px;
     padding-left: 168px;
     border: none;
   }
 
   .main-nav__item {
+    width: 150px;
+    margin: 10px 0;
     padding: 0;
     border: none;
+    text-align: left;
+
+    &:nth-child(4n) {
+      width: 131px;
+    }
+
+    &:nth-child(4n+2) {
+      margin-right: 40px;
+    }
   }
 
   .main-nav__link {
-    padding: 16px 0;
+    padding: 20px 0 7px 0;
   }
 }

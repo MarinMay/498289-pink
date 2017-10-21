@@ -9,7 +9,7 @@
   display: block;
   margin: 0 auto;
   width: 280px;
-  height: 180px;
+  height: auto;
   line-height: 0;
   background-color: @bg-color-post-image;
 }
@@ -32,7 +32,6 @@
   .post__image {
     position: relative;
     width: 100vw;
-    height: auto;
     top: 0;
     left: ~"calc(-50vw + 50%)";
   }
@@ -99,7 +98,6 @@
 
   .post__image {
     width: 300px;
-    height: 300px;
   }
 
   .post__description {
@@ -124,6 +122,11 @@
     width: 660px;
     min-height: auto;
     margin-bottom: 50px;
+
+    img {
+      min-height: 510px;
+      object-fit: cover;
+    }
 
     .post__description {
       flex-direction: row;
@@ -167,7 +170,6 @@
 
   .post__image {
     width: 300px;
-    height: 400px;
   }
 
   .post:nth-child(2n) {
@@ -182,6 +184,11 @@
   .post--panorama {
     width: 940px;
     min-height: auto;
+    margin-bottom: 50px;
+
+    img {
+      min-height: 507px;
+    }
 
     .post__description {
       width: 940px;
@@ -191,7 +198,7 @@
 
     &::before {
       top: 54px;
-      right: 10px;
+      right: 0;
     }
   }
 }

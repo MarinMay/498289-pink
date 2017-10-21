@@ -18,5 +18,4 @@ function init () {
 
   myMap.geoObjects.add(myPlacemark),
   myMap.controls.add('ZoomControl');
-
 }
