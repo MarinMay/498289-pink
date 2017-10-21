@@ -2,6 +2,7 @@
   position: relative;
   box-sizing: border-box;
   width: 320px;
+  height: 100%;
   margin: 0 auto;
   padding: 37px 0 0 0;
   font-size: 18px;
@@ -33,6 +34,7 @@
 
 .achievements__item {
   margin-bottom: 52px;
+  padding-left: 70px;
 
   &:last-child {
     margin-bottom: 46px;
@@ -41,7 +43,6 @@
 
 .achievements__label {
   position: relative;
-  margin-left: 70px;
 }
 
 .achievements__label::before {
@@ -124,8 +125,8 @@
     padding: 48px 58px 8px 58px;
   }
 
-  .achievements__label {
-    margin-left: 60px;
+  .achievements__item {
+    padding-left: 60px;
   }
 
   .achievements__label::before {
@@ -149,6 +150,7 @@
   }
 
   .achievements__item {
+    box-sizing: border-box;
     flex-shrink: 0;
   }
 
