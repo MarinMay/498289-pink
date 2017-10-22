@@ -10,12 +10,16 @@
 .editing-photo__list--icon {
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
+  width: 240px;
+  margin: 0 auto;
 
   .editing-photo__item {
     display: flex;
     justify-content: center;
     align-items: center;
     box-sizing: border-box;
+    width: 80px;
     height: 46px;
     margin-bottom: 20px;
   }
@@ -31,13 +35,11 @@
   &--crop {
     width: 48px;
     height: 48px;
-    margin-right: 34px;
   }
 
   &--fill {
     width: 48px;
     height: 48px;
-    margin-right: 40px;
   }
 
   &--contrast {
@@ -126,7 +128,7 @@
   }
 
   .editing-photo__button--fill {
-    padding-top: 13px;
+    padding-top: 11px;
   }
 
   .editing-photo__button--contrast {
@@ -196,6 +198,11 @@
 
     .editing-photo__item {
       margin-bottom: 16px;
+    }
+
+    .editing-photo__button--crop {
+      position: relative;
+      margin: -3px 0 0 -2px;
     }
   }
 

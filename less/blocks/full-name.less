@@ -69,13 +69,30 @@
   .full-name__inner {
     justify-content: space-between;
     width: auto;
+    width: 435px;
     min-height: 293px;
     margin: 0;
     padding: 7px 0 0 0;
   }
 
   .full-name__label {
-    margin: 0 0 55px 0;
+    margin: 0 0 52px 0;
+  }
+
+  .full-name__caption {
+    margin-top: 5px;
+  }
+
+  .full-name__label--name {
+    .full-name__caption {
+      margin-top: 0;
+    }
+  }
+
+  .full-name__label--patronymic {
+    .full-name__caption {
+      padding-right: 18px;
+    }
   }
 
   .full-name__label:last-child {
