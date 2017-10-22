@@ -51,6 +51,34 @@ module.exports = function(grunt) {
       }
     },
 
+    htmlmin: {
+      dist: {
+        options: {
+          removeComments: true,
+          collapseWhitespace: true
+        },
+        files: {
+          "build/index.html": "build/index.html",
+          "build/form.html": "build/form.html",
+          "build/photo.html": "build/photo.html"
+        }
+      }
+    },
+
+    uglify: {
+      options: {
+        mangle: false
+      },
+      my_target: {
+        files: {
+          "build/js/main.min.js": ["js/main.js"],
+          "build/js/main-index.min.js": ["js/main-index.js"],
+          "build/js/map.min.js": ["js/map.js"],
+          "build/js/picturefill.min.js": ["js/picturefill.js"]
+        }
+      }
+    },
+
     imagemin: {
       images: {
         options: {
@@ -120,8 +148,7 @@ module.exports = function(grunt) {
           expand: true,
           src: [
             "fonts/**/*.{woff,woff2}",
-            "img/**",
-            "js/**"
+            "img/**"
           ],
           dest: "build"
         }]
@@ -141,6 +168,8 @@ module.exports = function(grunt) {
     "less",
     "postcss",
     "cssmin",
-    "posthtml"
+    "posthtml",
+    "htmlmin",
+    "uglify"
   ]);
 };
