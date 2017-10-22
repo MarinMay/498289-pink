@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <link href="css/style.min.css" rel="stylesheet">
   </head>
+
   <body>
     <div style="display:none">
       <include src="build/img/sprite.svg"></include>
@@ -76,7 +77,7 @@
                   Фамилия:
                 </span>
 
-                <input type="text" name="surname" placeholder="Укажите фамилию*" required>
+                <input type="text" name="surname" placeholder="Укажите фамилию *" required>
               </label>
 
               <label class="full-name__label full-name__label--name">
@@ -84,7 +85,7 @@
                   Имя:
                 </span>
 
-                <input type="text" name="name" placeholder="Введите ваше имя*" required>
+                <input type="text" name="name" placeholder="Введите ваше имя *" required>
               </label>
 
               <label class="full-name__label full-name__label--patronymic">
@@ -172,44 +173,44 @@
                   Адрес почты
                 </span>
 
-                <input type="email" name="email" placeholder="Введите почту*" required>
+                <input type="email" name="email" placeholder="Введите почту *" required>
               </label>
             </div>
           </fieldset>
 
-            <fieldset class="form__app app">
-              <p class="form__title app__title">С каким приложением путешествовали?</p>
+          <fieldset class="form__app app">
+            <p class="form__title app__title">С каким приложением путешествовали?</p>
 
-              <ul class="app__list">
-                <li class="app__item app__item--ios">
-                  <input id="ios" type="radio" name="app" value="iOS" checked>
+            <ul class="app__list">
+              <li class="app__item app__item--ios">
+                <input id="ios" type="radio" name="app" value="iOS" checked>
 
-                  <label class="app__label" for="ios" tabindex="0">
-                    Pink для iOS
-                  </label>
-                </li>
+                <label class="app__label" for="ios" tabindex="0">
+                  Pink для iOS
+                </label>
+              </li>
 
-                <li class="app__item app__item--android">
-                  <input id="android" type="radio" name="app" value="Android">
+              <li class="app__item app__item--android">
+                <input id="android" type="radio" name="app" value="Android">
 
-                  <label class="app__label" for="android" tabindex="0">
-                    Pink на Android
-                  </label>
-                </li>
+                <label class="app__label" for="android" tabindex="0">
+                  Pink на Android
+                </label>
+              </li>
 
-                <li class="app__item app__item--windows">
-                  <input id="windows" type="radio" name="app" value="Windows">
+              <li class="app__item app__item--windows">
+                <input id="windows" type="radio" name="app" value="Windows">
 
-                  <label class="app__label" for="windows" tabindex="0">
-                    Windows Phone
-                  </label>
-                </li>
-              </ul>
-            </fieldset>
+                <label class="app__label" for="windows" tabindex="0">
+                  Windows Phone
+                </label>
+              </li>
+            </ul>
+          </fieldset>
 
           <fieldset class="form__emotion emotion">
             <p class="form__title emotion__title">Опишите свои эмоции</p>
-            <textarea class="emotion__describe" name="describe-emotion" placeholder="Можно прям в   красках, не стесняясь в выражениях"></textarea>
+            <textarea class="emotion__describe" name="describe-emotion" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
           </fieldset>
 
           <div class="form__button-wrapper">

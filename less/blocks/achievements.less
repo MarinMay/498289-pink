@@ -146,7 +146,7 @@
   .achievements__list {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: flex-start;
   }
 
   .achievements__item {
@@ -158,18 +158,21 @@
   .achievements__item:nth-child(2),
   .achievements__item:nth-child(3n+7) {
     width: 260px;
+    margin-right: 55px;
   }
 
   .achievements__item:nth-child(3),
   .achievements__item:nth-child(4),
   .achievements__item:nth-child(3n+8) {
     width: 242px;
+    margin-right: 53px;
   }
 
   .achievements__item:nth-child(5),
   .achievements__item:nth-child(6),
   .achievements__item:nth-child(3n+9) {
     width: 210px;
+    margin-right: 0;
   }
 
   .achievements__item--chuck-norris {

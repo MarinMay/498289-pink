@@ -45,16 +45,17 @@
 /*крестик при открытом меню*/
 .burger__icon--open {
   width: 25px;
+  padding: 0 0 6px 27px;
   background-color: transparent;
 }
 
 .burger__icon--open::before {
-  width: 32px;
+  width: 30px;
   transform: translateY(2px) rotate(45deg);
 }
 
 .burger__icon--open::after {
-  width: 32px;
+  width: 30px;
   transform: translateY(-2px) rotate(-45deg);
 }
 
@@ -74,4 +75,10 @@
 .burger:active .burger__icon--open::before,
 .burger:active .burger__icon--open::after {
   background-color: @menu-color--mobile--active;
+}
+
+@media (min-width: @tablet-width) {
+  .burger__icon--open {
+    padding: 28px 0 0 27px;
+  }
 }
