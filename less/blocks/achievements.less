@@ -66,39 +66,35 @@
   transform: rotate(-45deg);
 }
 
-.achievements__item input[type="checkbox"] {
-  display: none;
-}
-
-.achievements__item input[type="checkbox"]:checked ~.achievements__label::after {
+.achievements__item input[type="checkbox"]:checked + .achievements__label::after {
   border: 2px solid @checked-color;
   border-top: none;
   border-right: none;
 }
 
-.achievements__item input[type="checkbox"]:checked ~ .achievements__label:after {
+.achievements__item input[type="checkbox"]:checked + .achievements__label:after {
   border-color: @checked-color;
 }
 
-.achievements__item input[type="checkbox"]:hover ~ .achievements__label::before {
+.achievements__item input[type="checkbox"]:hover + .achievements__label::before {
   border-color: @border-color--hover;
 }
 
-.achievements__item input[type="checkbox"]:focus ~ .achievements__label::before {
+.achievements__item input[type="checkbox"]:focus + .achievements__label::before {
   border-color: @border-color--hover;
 }
 
-.achievements__item input[type="checkbox"]:active ~ .achievements__label::before {
+.achievements__item input[type="checkbox"]:active + .achievements__label::before {
   border-color: @border-color--active;
 }
 
-.achievements__item input[type="checkbox"]:checked:disabled ~ .achievements__label:after,
-  .achievements__item input[type="checkbox"]:checked:disabled ~ .achievements__label {
+.achievements__item input[type="checkbox"]:checked:disabled + .achievements__label:after,
+  .achievements__item input[type="checkbox"]:checked:disabled + .achievements__label {
   opacity: 0.5;
 }
 
-.achievements__item input[type="checkbox"]:disabled ~ .achievements__label:after,
-  .achievements__item input[type="checkbox"]:disabled ~ .achievements__label {
+.achievements__item input[type="checkbox"]:disabled + .achievements__label:after,
+  .achievements__item input[type="checkbox"]:disabled + .achievements__label {
   opacity: 0.5;
 }
 

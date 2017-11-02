@@ -62,33 +62,29 @@
   height: 15px;
 }
 
-.app__item input[type="radio"] {
-  display: none;
-}
-
-.app__item input[type="radio"]:checked ~ .app__label:after {
+.app__item input[type="radio"]:checked + .app__label:after {
   background-color: @checked-color;
 }
 
-.app__item input[type="radio"]:hover ~ .app__label::before {
+.app__item input[type="radio"]:hover + .app__label::before {
   border-color: @border-color--hover;
 }
 
-.app__item input[type="radio"]:focus ~ .app__label::before {
+.app__item input[type="radio"]:focus + .app__label::before {
   border-color: @border-color--hover;
 }
 
-.app__item input[type="radio"]:active ~ .app__label::before {
+.app__item input[type="radio"]:active + .app__label::before {
   border-color: @border-color--active;
 }
 
-.app__item input[type="radio"]:checked:disabled ~ .app__label:after,
-  .app__item input[type="radio"]:checked:disabled ~ .app__label {
+.app__item input[type="radio"]:checked:disabled + .app__label:after,
+  .app__item input[type="radio"]:checked:disabled + .app__label {
   opacity: 0.5;
 }
 
-.app__item input[type="radio"]:disabled ~ .app__label:after,
-  .app__item input[type="radio"]:disabled ~ .app__label {
+.app__item input[type="radio"]:disabled + .app__label:after,
+  .app__item input[type="radio"]:disabled + .app__label {
   opacity: 0.5;
 }
 
