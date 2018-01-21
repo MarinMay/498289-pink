@@ -54,5 +54,8 @@
   "engines": {
     "node": "8.2"
   },
-  "dependencies": {}
+  "dependencies": {
+    "handlebars": "^4.0.11",
+    "uglify-js": "^3.3.8"
+  }
 }
