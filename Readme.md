@@ -4,6 +4,8 @@
 
 * Наставник: [Лиза Позднякова](https://htmlacademy.ru/profile/lizzy).
 
+Собранная версия проекта: https://marinmay.github.io/Pink/
+
 ---
 
 **Обратите внимание на файл:**

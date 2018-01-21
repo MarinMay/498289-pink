@@ -157,6 +157,13 @@ module.exports = function(grunt) {
 
     clean: {
       build: ["build"]
+    },
+
+    "gh-pages": {
+      options: {
+        base: 'build'
+      },
+      src: ['**']
     }
   });
 
