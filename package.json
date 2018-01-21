@@ -5,8 +5,8 @@
   "description": "Личный проект «Пинк» от HTML Academy",
   "devDependencies": {
     "@htmlacademy/editorconfig-cli": "1.x",
-    "autoprefixer": "7.1.x",
-    "eslint": "^4.9.0",
+    "autoprefixer": "^7.2.5",
+    "eslint": "^4.16.0",
     "grunt": "^1.0.1",
     "grunt-browser-sync": "2.2.x",
     "grunt-build-gh-pages": "^1.0.5",
@@ -16,9 +16,9 @@
     "grunt-contrib-htmlmin": "^2.4.0",
     "grunt-contrib-imagemin": "^2.0.1",
     "grunt-contrib-less": "1.4.x",
-    "grunt-contrib-uglify": "^3.1.0",
+    "grunt-contrib-uglify": "^3.3.0",
     "grunt-contrib-watch": "1.0.x",
-    "grunt-cwebp": "^2.1.0",
+    "grunt-cwebp": "^2.1.1",
     "grunt-gh-pages": "^2.0.0",
     "grunt-juwain-posthtml": "^0.6.0",
     "grunt-postcss": "0.9.x",
@@ -28,7 +28,7 @@
     "pixel-glass": "^1.0.13",
     "posthtml-include": "^1.1.0",
     "stylelint": "8.1.x",
-    "stylelint-config-htmlacademy": "0.1.x"
+    "stylelint-config-htmlacademy": "^0.1.1"
   },
   "scripts": {
     "editorconfig": "editorconfig-cli",
